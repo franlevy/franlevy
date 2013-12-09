@@ -1,4 +1,4 @@
-/*** html5doctor.com Reset Stylesheet ** */
+/* html5doctor.com Reset Stylesheet */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -32,9 +32,98 @@ a {
   vertical-align: baseline;
   background: transparent; }
 
+/* */
+/* TYPOGRAPHY */
+/* All font sizes calculated based on 1em = 10px */
+p {
+  font-family: Tahoma, sans-serif;
+  font-size: 1.7em;
+  font-weight: normal;
+  line-height: 2em; }
+
+h1 {
+  font-family: Times, serif;
+  font-size: 5em;
+  color: black; }
+
+h2 {
+  font-family: Tahoma, sans-serif;
+  font-size: 1.6em;
+  color: black;
+  line-height: 5em;
+  text-transform: uppercase; }
+
+h3 {
+  color: black;
+  text-align: center; }
+
+h4 {
+  font-family: Times, serif;
+  font-size: 2em;
+  font-weight: normal;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 2em;
+  color: #ef4137; }
+
+.small-bold-caps, h3, header, footer {
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1.4em;
+  text-transform: uppercase; }
+
+/* LISTS */
+.link-list li {
+  margin: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+.link-list a:link, .link-list a:visited, .link-list a:hover, .link-list a:active, .link-list a:focus {
+  text-decoration: none;
+  color: black;
+  padding: 0 2%;
+  border-right-width: 0.15em;
+  border-right-style: solid;
+  border-right-color: black; }
+  .link-list a:link:last-child, .link-list a:visited:last-child, .link-list a:hover:last-child, .link-list a:active:last-child, .link-list a:focus:last-child {
+    border: none; }
+.link-list a:link, .link-list a:visited {
+  color: #131313; }
+.link-list .active, .link-list a:hover, .link-list a:active, .link-list a:focus {
+  color: #e07e76; }
+
+.regular li {
+  display: inline-block; }
+
 /* GENERAL LAYOUT */
 body {
-  margin: 0;
-  padding: 0;
   font-size: 10px;
-  margin-top: 6em; }
+  background-color: #f9f0df; }
+
+.container {
+  margin: 0 auto;
+  padding: 1.25% 1%;
+  width: 97.5%;
+  max-width: 500px; }
+
+/* HEADER */
+header {
+  width: 100%;
+  overflow: hidden;
+  background-color: #e07e76;
+  color: black; }
+
+nav {
+  float: left;
+  text-align: left;
+  width: 100%;
+  background-color: #f9f0df; }
+
+/* MAIN CONTENT */
+section {
+  width: 100%;
+  background-color: #af9ef1; }
+
+/* FOOTER */
+footer .container {
+  text-align: center;
+  padding: 4.5% 0; }

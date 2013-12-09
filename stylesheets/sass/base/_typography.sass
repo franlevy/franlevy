@@ -1,3 +1,45 @@
 /* TYPOGRAPHY */
 
-/* All font sizes calculated based on 1em = 10px. */
+/* All font sizes calculated based on 1em = 10px */
+p
+    font:
+        family: $sans-serif
+        size: 1.7em
+        weight: normal
+    line-height: 2em
+
+h1
+    font:
+        family: $serif
+        size: 5em
+    color: $black
+
+h2
+    font:
+        family: $sans-serif
+        size: 1.6em
+    color: $black
+    line-height: 5em
+    text-transform: uppercase
+
+h3
+    color: $black
+    text-align: center
+    @extend .small-bold-caps
+
+h4
+    font:
+        family: $serif
+        size: 2em
+        weight: normal
+    text-transform: capitalize
+    text-align: center
+    line-height: 2em
+    color: $serif-heading
+
+.small-bold-caps
+    font:
+        family: $sans-serif
+        weight: bold
+        size: 1.4em
+    text-transform: uppercase
