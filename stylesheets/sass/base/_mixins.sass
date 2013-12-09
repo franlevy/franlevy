@@ -1,0 +1,29 @@
+// MIXINS
+=shadow($shadow...)
+    -webkit-box-shadow: $shadow
+    -moz-box-shadow: $shadow
+    box-shadow: $shadow
+
+=radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    border-radius: $radius
+
+=bg-img($imgpath, $position, $repeat)
+    background:
+        image: url($imgpath)
+        position: $position
+        repeat: $repeat
+
+/*
+=link-li($color, $padding, $border-width, $border-style, $border-color)
+    a:link, a:visited, a:hover, a:active, a:focus
+        text-decoration: none
+        color: $color
+        padding: $padding
+        border-right: 
+            width: $border-width
+            style: $border-style
+            color: $border-color
+        &:last-child
+            border: none
