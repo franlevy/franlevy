@@ -48,9 +48,9 @@ h1 {
 
 h2 {
   font-family: Tahoma, sans-serif;
-  font-size: 1.6em;
+  font-size: 2em;
   color: black;
-  line-height: 5em;
+  line-height: 1.2em;
   text-transform: uppercase; }
 
 h3 {
@@ -70,6 +70,7 @@ h4 {
   font-family: Tahoma, sans-serif;
   font-weight: bold;
   font-size: 1.4em;
+  letter-spacing: 0.025em;
   text-transform: uppercase; }
 
 /* LISTS */
@@ -79,13 +80,7 @@ h4 {
   padding-bottom: 0.5em; }
 .link-list a:link, .link-list a:visited, .link-list a:hover, .link-list a:active, .link-list a:focus {
   text-decoration: none;
-  color: black;
-  padding: 0 2%;
-  border-right-width: 0.15em;
-  border-right-style: solid;
-  border-right-color: black; }
-  .link-list a:link:last-child, .link-list a:visited:last-child, .link-list a:hover:last-child, .link-list a:active:last-child, .link-list a:focus:last-child {
-    border: none; }
+  color: black; }
 .link-list a:link, .link-list a:visited {
   color: #131313; }
 .link-list .active, .link-list a:hover, .link-list a:active, .link-list a:focus {
@@ -93,6 +88,13 @@ h4 {
 
 .regular li {
   display: inline-block; }
+.regular a:link, .regular a:visited, .regular a:hover, .regular a:active, .regular a:focus {
+  padding: 0 2%;
+  border-right-width: 0.15em;
+  border-right-style: solid;
+  border-right-color: black; }
+  .regular a:link:last-child, .regular a:visited:last-child, .regular a:hover:last-child, .regular a:active:last-child, .regular a:focus:last-child {
+    border: none; }
 
 /* GENERAL LAYOUT */
 body {
@@ -121,7 +123,9 @@ nav {
 /* MAIN CONTENT */
 section {
   width: 100%;
-  background-color: #af9ef1; }
+  background-color: #af9ef1;
+  padding-top: 3%;
+  padding-bottom: 3%; }
 
 /* FOOTER */
 footer .container {
