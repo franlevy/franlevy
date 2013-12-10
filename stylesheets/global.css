@@ -39,7 +39,8 @@ p {
   font-family: Tahoma, sans-serif;
   font-size: 1.7em;
   font-weight: normal;
-  line-height: 2em; }
+  line-height: 1.2em;
+  padding-top: 1em; }
 
 h1 {
   font-family: Times, serif;
@@ -49,8 +50,8 @@ h1 {
 h2 {
   font-family: Tahoma, sans-serif;
   font-size: 2em;
-  color: black;
   line-height: 1.2em;
+  letter-spacing: 0.025em;
   text-transform: uppercase; }
 
 h3 {
@@ -66,18 +67,18 @@ h4 {
   line-height: 2em;
   color: #ef4137; }
 
-.small-bold-caps, h3, header, footer {
+.small-bold-caps, h3, nav, footer {
   font-family: Tahoma, sans-serif;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.8em;
   letter-spacing: 0.025em;
   text-transform: uppercase; }
 
 /* LISTS */
 .link-list li {
   margin: 0;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em; }
+  padding-top: 0.3em;
+  padding-bottom: 0.3em; }
 .link-list a:link, .link-list a:visited, .link-list a:hover, .link-list a:active, .link-list a:focus {
   text-decoration: none;
   color: black; }
@@ -124,8 +125,8 @@ nav {
 section {
   width: 100%;
   background-color: #af9ef1;
-  padding-top: 3%;
-  padding-bottom: 3%; }
+  padding-top: 2%;
+  padding-bottom: 2%; }
 
 /* FOOTER */
 footer .container {
