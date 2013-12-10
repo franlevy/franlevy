@@ -39,7 +39,8 @@ p {
   font-family: Tahoma, sans-serif;
   font-size: 1.7em;
   font-weight: normal;
-  line-height: 2em; }
+  line-height: 1.2em;
+  padding-top: 1em; }
 
 h1 {
   font-family: Times, serif;
@@ -49,8 +50,8 @@ h1 {
 h2 {
   font-family: Tahoma, sans-serif;
   font-size: 2em;
-  color: black;
   line-height: 1.2em;
+  letter-spacing: 0.025em;
   text-transform: uppercase; }
 
 h3 {
@@ -66,18 +67,23 @@ h4 {
   line-height: 2em;
   color: #ef4137; }
 
-.small-bold-caps, h3, header, footer {
+h5 {
+  font-family: Tahoma, sans-serif;
+  font-size: 1.6em;
+  font-weight: normal;
+  line-height: 1.2em; }
+
+.small-bold-caps, h3, nav {
   font-family: Tahoma, sans-serif;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.8em;
   letter-spacing: 0.025em;
   text-transform: uppercase; }
 
 /* LISTS */
 .link-list li {
   margin: 0;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em; }
+  padding: 2% 0; }
 .link-list a:link, .link-list a:visited, .link-list a:hover, .link-list a:active, .link-list a:focus {
   text-decoration: none;
   color: black; }
@@ -88,14 +94,15 @@ h4 {
 
 .regular li {
   display: inline-block; }
-.regular a:link, .regular a:visited, .regular a:hover, .regular a:active, .regular a:focus {
-  padding: 0 2%;
-  border-right-width: 0.15em;
-  border-right-style: solid;
-  border-right-color: black; }
-  .regular a:link:last-child, .regular a:visited:last-child, .regular a:hover:last-child, .regular a:active:last-child, .regular a:focus:last-child {
-    border: none; }
 
+/* a:link, a:visited, a:hover, a:active, a:focus
+ *     padding: 0 2%
+ *     border-right:
+ *         width: 0.15em
+ *         style: solid
+ *         color: $black
+ *     &:last-child
+ *         border: none */
 /* GENERAL LAYOUT */
 body {
   font-size: 10px;
@@ -103,31 +110,38 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 1.25% 1%;
-  width: 97.5%;
+  padding: 1.25% 2.5%;
+  width: 95%;
   max-width: 500px; }
 
 /* HEADER */
 header {
-  width: 100%;
-  overflow: hidden;
   background-color: #e07e76;
-  color: black; }
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+  z-index: 2;
+  position: fixed;
+  top: 0em;
+  width: 100%;
+  overflow: hidden; }
 
 nav {
   float: left;
   text-align: left;
   width: 100%;
   background-color: #f9f0df; }
+  nav .container {
+    padding-top: 2.25%;
+    padding-bottom: 2.25%; }
 
 /* MAIN CONTENT */
 section {
   width: 100%;
   background-color: #af9ef1;
-  padding-top: 3%;
-  padding-bottom: 3%; }
+  padding-top: 2%;
+  padding-bottom: 2%; }
 
 /* FOOTER */
 footer .container {
   text-align: center;
-  padding: 4.5% 0; }
+  padding: 3% 0; }
