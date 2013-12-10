@@ -112,16 +112,11 @@ body {
   margin: 0 auto;
   padding: 1.25% 2.5%;
   width: 95%;
-  max-width: 500px; }
+  max-width: 400px; }
 
 /* HEADER */
 header {
   background-color: #e07e76;
-  opacity: 0.95;
-  filter: alpha(opacity=95);
-  z-index: 2;
-  position: fixed;
-  top: 0em;
   width: 100%;
   overflow: hidden; }
 
