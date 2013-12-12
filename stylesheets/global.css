@@ -106,7 +106,7 @@ h5 {
 /* GENERAL LAYOUT */
 body {
   font-size: 10px;
-  background-color: #f9f0df; }
+  background-color: #4c6176; }
 
 .container {
   margin: 0 auto;
@@ -124,7 +124,7 @@ nav {
   float: left;
   text-align: left;
   width: 100%;
-  background-color: #f9f0df; }
+  background-color: #4c6176; }
   nav .container {
     padding-top: 2.25%;
     padding-bottom: 2.25%; }
@@ -137,6 +137,9 @@ section {
   padding-bottom: 2%; }
 
 /* FOOTER */
-footer .container {
+footer {
+  border-top: solid 0.25em orange;
   text-align: center;
   padding: 3% 0; }
+  footer .social-media {
+    background: url("/images/background/gray-stripe1.png") repeat left top; }
