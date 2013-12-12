@@ -106,22 +106,17 @@ h5 {
 /* GENERAL LAYOUT */
 body {
   font-size: 10px;
-  background-color: #f9f0df; }
+  background-color: #4c6176; }
 
 .container {
   margin: 0 auto;
   padding: 1.25% 2.5%;
   width: 95%;
-  max-width: 500px; }
+  max-width: 400px; }
 
 /* HEADER */
 header {
   background-color: #e07e76;
-  opacity: 0.95;
-  filter: alpha(opacity=95);
-  z-index: 2;
-  position: fixed;
-  top: 0em;
   width: 100%;
   overflow: hidden; }
 
@@ -129,7 +124,7 @@ nav {
   float: left;
   text-align: left;
   width: 100%;
-  background-color: #f9f0df; }
+  background-color: #4c6176; }
   nav .container {
     padding-top: 2.25%;
     padding-bottom: 2.25%; }
@@ -142,6 +137,9 @@ section {
   padding-bottom: 2%; }
 
 /* FOOTER */
-footer .container {
+footer {
+  border-top: solid 0.25em orange;
   text-align: center;
   padding: 3% 0; }
+  footer .social-media {
+    background: url("/images/background/gray-stripe1.png") repeat left top; }
