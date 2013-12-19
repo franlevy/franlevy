@@ -32,6 +32,34 @@ a {
   vertical-align: baseline;
   background: transparent; }
 
+/* Menu Toggle */
+input {
+  display: none; }
+
+label {
+  background: whitesmoke;
+  background: linear-gradient(white, #eeeeee);
+  border: 0.1em solid #cccccc;
+  border-radius: 1em;
+  cursor: pointer; }
+
+label:hover {
+  color: #f7941d; }
+
+input:checked + label {
+  background: whitesmoke;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: #8c9198; }
+
+nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s linear; }
+
+/* */
+input:checked ~ nav {
+  max-height: 500px; }
+
 /* */
 /* TYPOGRAPHY */
 /* All font sizes calculated based on 1em = 10px */
@@ -110,8 +138,7 @@ body {
 /* HEADER */
 header {
   background-color: #e07e76;
-  width: 100%;
-  overflow: hidden; }
+  width: 100%; }
 
 /* NAVIGATION */
 nav {
@@ -135,21 +162,26 @@ footer {
   border-top: solid 0.25em orange;
   text-align: center; }
   footer .social-media {
-    background: #453f3f; }
-  footer .site-map a:link, footer .site-map a:visited, footer .site-map a:hover, footer .site-map a:active, footer .site-map a:focus {
-    padding: 0 2%;
-    border-right-width: 0.15em;
-    border-right-style: solid;
-    border-right-color: black; }
-    footer .site-map a:link:last-child, footer .site-map a:visited:last-child, footer .site-map a:hover:last-child, footer .site-map a:active:last-child, footer .site-map a:focus:last-child {
-      border: none; }
+    background: #453f3f;
+    padding-top: 2%;
+    padding-bottom: 2%; }
+  footer .site-map {
+    padding-top: 2%;
+    padding-bottom: 2%; }
+    footer .site-map a:link, footer .site-map a:visited, footer .site-map a:hover, footer .site-map a:active, footer .site-map a:focus {
+      padding: 0 2%;
+      border-right-width: 0.15em;
+      border-right-style: solid;
+      border-right-color: black; }
+      footer .site-map a:link:last-child, footer .site-map a:visited:last-child, footer .site-map a:hover:last-child, footer .site-map a:active:last-child, footer .site-map a:focus:last-child {
+        border: none; }
 
 /* MEDIA QUERIES */
 @viewport {
   width: device-width;
   zoom: 1; }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   footer .social-media {
     background: url("/images/background/gray-stripe1.png") repeat left top; } }
 img, video, canvas {
