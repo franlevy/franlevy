@@ -3,7 +3,17 @@
 footer
     border-top: solid .25em orange
     text-align: center
-    padding: 3% 0
     
     .social-media
-        background: url('/images/background/gray-stripe1.png') repeat left top
+        background: $social-bg
+
+    .site-map
+        @extend .small-bold-caps
+        a:link, a:visited, a:hover, a:active, a:focus
+            padding: 0 2%
+            border-right:
+                width: 0.15em
+                style: solid
+                color: $black
+            &:last-child
+                border: none

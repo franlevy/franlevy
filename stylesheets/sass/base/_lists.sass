@@ -1,31 +1,24 @@
 /* LISTS */
 
-.link-list
+/* One item per line */
+.many-lines
     li
         margin: 0
         padding: 2% 0
-        
+
+/* Multiple items per line */
+.one-line
+    li
+        display: inline-block
+
+/* Link characteristics */
+.link 
     a:link, a:visited, a:hover, a:active, a:focus
         text-decoration: none
         color: $black
         
     a:link, a:visited
-        color: $bold-color
+        color: $black
 
     .active, a:hover, a:active, a:focus
-        color: $red
-
-
-.regular
-    li
-        display: inline-block
-
-/*
-    a:link, a:visited, a:hover, a:active, a:focus
-        padding: 0 2%
-        border-right:
-            width: 0.15em
-            style: solid
-            color: $black
-        &:last-child
-            border: none
+        color: $link-hover
