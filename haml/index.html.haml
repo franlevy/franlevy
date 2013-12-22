@@ -5,22 +5,28 @@
         %title
             Home | Fran Levy
         %link(rel='stylesheet' type='text/css' href='stylesheets/global.css')
+        %script(src='navicon.js')
 
     %body
         / Header and Navigation
         %header
             .container
-                %h1
-                    Fran Levy
-            %nav
-                .container
-                    %ul.link-list
+                .title
+                    %h1
+                        %a(href='index.html')Fran Levy
+                .toggle
+                    %a.navicon.link(href="#mainmenu")
+        %nav
+            .container
+                #mainmenu
+                    %ul.link.many-lines
                         %li
-                            %a.active(href='#')About
+                            %a(href='#')About
                         %li
                             %a(href='#')Portfolio
                         %li
                             %a(href='#') Contact
+        / Main Content
         %section
             .container
                 %h2
@@ -31,14 +37,23 @@
                     Let's add some filler to see how it looks. Let's add some filler to see how it looks. Let's add some filler to see how it looks.
                 %p
                     Let's add some filler to see how it looks.
+        / Footer
         %footer
             .social-media
-                %ul.link-list.regular
+                %ul.link.one-line
                     %li
-                        %a.active(href='#')Email icon
+                        %a(href='#')Email icon
                     %li
                         %a(href='#')LinkedIn icon
+            .site-map
+                %ul.link.one-line
+                    %li
+                        %a(href='#')About
+                    %li
+                        %a(href='#')Portfolio
+                    %li
+                        %a(href='#')Contact
             .container
                 %h5
-                    Copyright 2013 Fran Levy. All rights reserved.
+                    Copyright &copy; 2013 Fran Levy. All rights reserved.
 

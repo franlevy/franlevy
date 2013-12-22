@@ -5,20 +5,28 @@
       Home | Fran Levy
     </title>
     <link href='stylesheets/global.css' rel='stylesheet' type='text/css'>
+    <script src='navicon.js'></script>
   </head>
   <body>
     <!-- Header and Navigation -->
     <header>
       <div class='container'>
-        <h1>
-          Fran Levy
-        </h1>
+        <div class='title'>
+          <h1>
+            <a href='index.html'>Fran Levy</a>
+          </h1>
+        </div>
+        <div class='toggle'>
+          <a class='navicon link' href='#mainmenu'></a>
+        </div>
       </div>
-      <nav>
-        <div class='container'>
-          <ul class='link-list'>
+    </header>
+    <nav>
+      <div class='container'>
+        <div id='mainmenu'>
+          <ul class='link many-lines'>
             <li>
-              <a class='active' href='#'>About</a>
+              <a href='#'>About</a>
             </li>
             <li>
               <a href='#'>Portfolio</a>
@@ -28,8 +36,9 @@
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+    <!-- Main Content -->
     <section>
       <div class='container'>
         <h2>
@@ -46,20 +55,34 @@
         </p>
       </div>
     </section>
+    <!-- Footer -->
     <footer>
       <div class='social-media'>
-        <ul class='link-list regular'>
+        <ul class='link one-line'>
           <li>
-            <a class='active' href='#'>Email icon</a>
+            <a href='#'>Email icon</a>
           </li>
           <li>
             <a href='#'>LinkedIn icon</a>
           </li>
         </ul>
       </div>
+      <div class='site-map'>
+        <ul class='link one-line'>
+          <li>
+            <a href='#'>About</a>
+          </li>
+          <li>
+            <a href='#'>Portfolio</a>
+          </li>
+          <li>
+            <a href='#'>Contact</a>
+          </li>
+        </ul>
+      </div>
       <div class='container'>
         <h5>
-          Copyright 2013 Fran Levy. All rights reserved.
+          Copyright &copy; 2013 Fran Levy. All rights reserved.
         </h5>
       </div>
     </footer>
