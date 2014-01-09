@@ -94,8 +94,6 @@ a:hover, a:active, a:focus {
 
 /* GENERAL LAYOUT */
 body {
-  margin: 0;
-  padding: 0;
   font-family: Tahoma, sans-serif;
   font-size: 10px;
   background-color: #cccccc; }
@@ -105,7 +103,8 @@ body {
   clear: both;
   padding: 1.25% 2.5%;
   width: 95%;
-  max-width: 400px; }
+  max-width: 400px;
+  overflow: hidden; }
 
 /* NAVICON */
 .navicon {
@@ -177,7 +176,9 @@ footer {
 /* Screen widths 400px and greater */
 @media screen and (min-width: 400px) {
   .social-media {
-    background: url("/images/background/gray-stripe1.png") repeat-x top left; } }
+    background: url("/images/background/gray-stripe1.png") repeat-x top left; }
+
+  .container-max-width: 1000px; }
 /* Screen widths 800px and greater */
 @media screen and (min-width: 800px) {
   .navicon {
