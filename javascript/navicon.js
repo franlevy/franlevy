@@ -1,13 +1,15 @@
 /* NAVICON JS */
 
-$("button").on("click", function() {
+$(".nav-btn").on("click", function() {
   
-  if (toggle) {
-    $("body").css("font-size", "36px");
+  if (toggle) 
+  { 
+    $("screen").css("min-width", "500px");
     toggle = 0;
-  } else {
-    $("body").css("font-size", "16px");
+  } 
+  else 
+  {
+    $("screen").css("max-width", "500px");
     toggle = 1;
   }
-  
-});
+  ;

@@ -5,7 +5,7 @@
         %title
             Home | Fran Levy
         %link(rel='stylesheet' type='text/css' href='stylesheets/global.css')
-        %script(src='navicon.js')
+        %script(type='text/javascript' src='script.js')
 
     %body
         / Header and Navigation
@@ -14,18 +14,18 @@
                 .title
                     %h1
                         %a(href='index.html')Fran Levy
-                .toggle
+                .nav-btn
                     %a.navicon.link(href="#mainmenu")
-        %nav
-            .container
-                #mainmenu
-                    %ul.link.many-lines
-                        %li
-                            %a(href='#')About
-                        %li
-                            %a(href='#')Portfolio
-                        %li
-                            %a(href='#') Contact
+            %nav
+                .container
+                    #mainmenu
+                        %ul.link.many-lines
+                            %li
+                                %a(href='#')About
+                            %li
+                                %a(href='#')Portfolio
+                            %li
+                                %a(href='#') Contact
         / Main Content
         %section
             .container
