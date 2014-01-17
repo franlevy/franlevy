@@ -82,13 +82,13 @@ a {
 a:hover, a:active, a:focus {
   color: orange; }
 
-/* LISTS */
-/* One item per line */
+/*** LISTS *** */
+/* Many lines, one item per line */
 .many-lines li {
   margin: 0;
   padding: 2% 0; }
 
-/* Multiple items per line */
+/* One line, multiple items per line */
 .one-line li {
   display: inline-block; }
 
@@ -106,17 +106,7 @@ body {
   max-width: 400px;
   overflow: hidden; }
 
-/* NAVICON */
-.navicon {
-  display: block;
-  width: 3em;
-  height: 0.5em;
-  line-height: 0;
-  border-top: 1.5em double black;
-  border-bottom: 0.5em solid black;
-  float: right; }
-
-/* HEADER */
+/*** HEADER *** */
 header {
   background-color: #e07e76;
   width: 100%;
@@ -134,8 +124,20 @@ header {
   width: 30%;
   padding-top: 2.25%; }
 
-/* NAVIGATION */
+/*** NAVIGATION *** */
+/* NAVICON */
+.navicon {
+  display: block;
+  width: 3em;
+  height: 0.5em;
+  line-height: 0;
+  border-top: 1.5em double black;
+  border-bottom: 0.5em solid black;
+  float: right; }
+
+/* MAIN MENU NAVIGATION */
 nav {
+  clear: both;
   float: left;
   text-align: left;
   width: 100%;
@@ -151,19 +153,19 @@ section {
   padding-top: 2%;
   padding-bottom: 2%; }
 
-/* FOOTER */
+/*** FOOTER *** */
 footer {
-  border-top: solid 0.25em orange;
+  border-top: solid 1% orange;
   text-align: center; }
 
 .social-media {
   background-color: #453f3f;
-  padding-top: 2%;
-  padding-bottom: 2%; }
+  padding-top: 5%;
+  padding-bottom: 5%; }
 
 .site-map {
-  padding-top: 2%;
-  padding-bottom: 2%; }
+  padding-top: 5%;
+  padding-bottom: 5%; }
   .site-map a:link, .site-map a:visited, .site-map a:hover, .site-map a:active, .site-map a:focus {
     padding: 0 2%;
     border-right-width: 0.15em;
@@ -172,15 +174,22 @@ footer {
     .site-map a:link:last-child, .site-map a:visited:last-child, .site-map a:hover:last-child, .site-map a:active:last-child, .site-map a:focus:last-child {
       border: none; }
 
-/* MEDIA QUERIES */
+/*** MEDIA QUERIES *** */
 /* Screen widths 400px and greater */
-@media screen and (min-width: 400px) {
-  .social-media {
-    background: url("/images/background/gray-stripe1.png") repeat-x top left; }
+@media screen and (min-width: 500px) {
+  .container {
+    max-width: 1000px; }
 
-  .container-max-width: 1000px; }
-/* Screen widths 800px and greater */
-@media screen and (min-width: 800px) {
+  .social-media {
+    background: url("images/background/gray-stripe1.png") repeat-x top left;
+    padding-top: 2%;
+    padding-bottom: 2%; }
+
+  .site-map {
+    padding-top: 2%;
+    padding-bottom: 2%; } }
+/* Screen widths 6500px and greater */
+@media screen and (min-width: 650px) {
   .navicon {
     display: none; } }
 /* General media queries */
