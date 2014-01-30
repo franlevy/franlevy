@@ -7,13 +7,26 @@
         padding: 2% 5%
         width: 90%
         max-width: 1000px
-    
+
     /* footer */
     footer
         background-image: url("../images/background/cincinnati-skyline.png")
         background-size: 100%
         background-repeat: no-repeat
-        background-position: 50% 0%
+        background-position: 0% 0%
+        position: relative
+
+        &:after
+            content : ""
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            background-image: url("../images/background/cincinnati-skyline.png")
+            height: 100%
+            width: 100%
+            opacity : 0.2
+
     .social-media
         text-align: right    
     .site-map
@@ -48,6 +61,16 @@
             &:nth-child(2)
                 padding-top: inherit
                 padding-bottom: inherit
+    
+    /* main content */
+    .category
+        width: 32%
+        float: left
+        padding-right: 2%
+
+        &:nth-child(3n+1)
+            padding-right: 0%
+
 
 
 /* General media queries */
