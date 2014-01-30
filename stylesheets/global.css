@@ -82,14 +82,7 @@ a {
 a:hover, a:active, a:focus {
   color: orange; }
 
-/*** LISTS *** */
-/* Many lines, one item per line */
-.many-lines li {
-  margin: 0;
-  padding: 2% 0; }
-
-/* One line, multiple items per line */
-.one-line li {
+li {
   display: inline-block; }
 
 /* GENERAL LAYOUT */
@@ -119,13 +112,13 @@ header {
   .title a {
     color: black; }
 
+/*** NAVIGATION *** */
+/* NAVICON */
 .nav-btn {
   float: right;
   width: 30%;
   padding-top: 2.25%; }
 
-/*** NAVIGATION *** */
-/* NAVICON */
 .navicon {
   display: block;
   width: 3em;
@@ -148,9 +141,13 @@ nav {
   letter-spacing: 0.025em;
   text-transform: uppercase;
   padding-top: 0; }
-  nav li:nth-child(2) {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%; }
+  nav li {
+    margin: 0;
+    padding: 2% 0;
+    display: block; }
+    nav li:nth-child(2) {
+      padding-top: 2.5%;
+      padding-bottom: 2.5%; }
 
 /* MAIN CONTENT */
 section {
@@ -165,8 +162,7 @@ footer {
   text-align: center; }
 
 .social-media {
-  background-color: #453f3f;
-  color: orange; }
+  background-color: #453f3f; }
 
 .site-map {
   padding-top: 5%;
@@ -188,34 +184,54 @@ footer {
 /*** MEDIA QUERIES *** */
 /* Screen widths 500px and greater */
 @media screen and (min-width: 500px) {
+  /* general layout */
   .container {
     padding: 2% 5%;
     width: 90%;
     max-width: 1000px; }
 
-  .social-media {
-    text-align: right;
-    background-size: 0.5em 0.5em;
-    background-color: #292727;
-    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-    -pie-background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent) 0 0/0.5em 0.5em, #292727;
-    behavior: url(/pie/PIE.htc); }
-
-  .site-map {
-    padding-top: 2%;
-    padding-bottom: 2%; }
-
+  /* footer */
   footer {
     background-image: url("../images/background/cincinnati-skyline.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: 50% 0%; } }
+    background-position: 50% 0%; }
+
+  .social-media {
+    text-align: right;
+    background-size: 1em 1em;
+    background-color: #292727;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    -pie-background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent) 0 0/1em 1em, #292727;
+    behavior: url(/pie/PIE.htc); }
+
+  .site-map {
+    padding-top: 2%;
+    padding-bottom: 2%; } }
 /* Screen widths 650px and greater */
 @media screen and (min-width: 650px) {
-  .navicon {
-    display: none; } }
+  /* header */
+  header .title {
+    width: 40%; }
+
+  /* navigation */
+  .nav-btn {
+    display: none; }
+
+  nav {
+    clear: none;
+    float: right;
+    width: 60%;
+    text-align: right;
+    background-color: transparent; }
+    nav li {
+      padding: 2% 3%;
+      display: inline-block; }
+      nav li:nth-child(2) {
+        padding-top: inherit;
+        padding-bottom: inherit; } }
 /* General media queries */
 @viewport {
   width: device-width;
