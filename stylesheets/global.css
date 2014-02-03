@@ -80,7 +80,7 @@ a {
   color: black; }
 
 a:hover, a:active, a:focus {
-  color: orange; }
+  color: #ffa400; }
 
 li {
   display: inline-block; }
@@ -89,7 +89,7 @@ li {
 body {
   font-family: Tahoma, sans-serif;
   font-size: 10px;
-  background-color: #cccccc; }
+  background-color: rgba(187, 184, 204, 0.7); }
 
 .container {
   margin: 0 auto;
@@ -101,7 +101,7 @@ body {
 
 /*** HEADER *** */
 header {
-  background-color: #e07e76;
+  background-color: #453f3f;
   width: 100%;
   overflow: overlay; }
 
@@ -110,7 +110,7 @@ header {
   width: 70%;
   padding-bottom: 2%; }
   .title a {
-    color: black; }
+    color: #ffa400; }
 
 /*** NAVIGATION *** */
 /* NAVICON */
@@ -141,6 +141,10 @@ nav {
   letter-spacing: 0.025em;
   text-transform: uppercase;
   padding-top: 0; }
+  nav a {
+    color: #ffa400; }
+    nav a:hover, nav a a:focus {
+      color: white; }
   nav li {
     margin: 0;
     padding: 2% 0;
@@ -152,7 +156,7 @@ nav {
 /* MAIN CONTENT */
 section {
   width: 100%;
-  background-color: #af9ef1;
+  background-color: #d6d9dc;
   padding-top: 1.5%;
   padding-bottom: 2.5%; }
   section h2, section h3 {
@@ -164,7 +168,7 @@ article {
 
 /*** FOOTER *** */
 footer {
-  border-top: solid 1% orange;
+  border-top: 1% solid #ffa400;
   text-align: center; }
 
 .social-media {
@@ -187,6 +191,9 @@ footer {
     .site-map a:link:last-child, .site-map a:visited:last-child, .site-map a:hover:last-child, .site-map a:active:last-child, .site-map a:focus:last-child {
       border: none; }
 
+.copyright {
+  padding-bottom: 5%; }
+
 /*** MEDIA QUERIES *** */
 /* Screen widths 500px and greater */
 @media screen and (min-width: 500px) {
@@ -198,27 +205,22 @@ footer {
 
   /* footer */
   footer {
-    background-image: url("../images/background/cincinnati-skyline.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 0% 0%;
-    position: relative; }
-    footer:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: url("../images/background/cincinnati-skyline.png");
-      height: 100%;
-      width: 100%;
-      opacity: 0.2; }
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%, url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
+    background: -moz-linear-gradient(top, rgba(187, 184, 204, 0.7) 0%, rgba(187, 184, 204, 0.7) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(187, 184, 204, 0.7)), color-stop(100%, rgba(187, 184, 204, 0.7))), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
+    background: -webkit-linear-gradient(top, rgba(187, 184, 204, 0.7) 0%, rgba(187, 184, 204, 0.7) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
+    background: -o-linear-gradient(top, rgba(187, 184, 204, 0.7) 0%, rgba(187, 184, 204, 0.7) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
+    background: -ms-linear-gradient(top, rgba(187, 184, 204, 0.7) 0%, rgba(187, 184, 204, 0.7) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
+    background: linear-gradient(to bottom, rgba(187, 184, 204, 0.7) 0%, rgba(187, 184, 204, 0.7) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%; }
 
   .social-media {
     text-align: right; }
 
   .site-map {
     padding-top: 2%;
+    padding-bottom: 0; }
+
+  .copyright {
     padding-bottom: 2%; } }
 /* Screen widths 650px and greater */
 @media screen and (min-width: 650px) {
