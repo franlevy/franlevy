@@ -3,29 +3,24 @@
 /* Screen widths 500px and greater */
 @media screen and (min-width: 500px)
     /* general layout */
+    body
+        +transparent-bg-img($lighter, 0.75)
+
     .container
-        padding: 2em 5%
+        padding: 2% 5%
         width: 90%
         max-width: 1000px
 
     /* footer */
-    footer
-        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%, url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: -moz-linear-gradient(top, $footer-bg 0%, $footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$footer-bg), color-stop(100%,$footer-bg)), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: -webkit-linear-gradient(top, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: -o-linear-gradient(top, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: -ms-linear-gradient(top, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: linear-gradient(to bottom, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
     .social-media
         text-align: right
 
     .site-map
         padding:
-            bottom: 1em
+            bottom: 2%
     .copyright
         padding:
-            bottom: 1em   
+            bottom: 2%  
 
 
 /* Screen widths 650px and greater */
