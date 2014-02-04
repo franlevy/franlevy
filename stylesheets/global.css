@@ -172,6 +172,7 @@ footer {
   text-align: center; }
 
 .social-media {
+  padding: 5% inherit;
   background-color: #453f3f; }
   .social-media li {
     padding-left: 2%; }
@@ -216,7 +217,8 @@ footer {
 
   /* footer */
   .social-media {
-    text-align: right; }
+    text-align: right;
+    padding: 2% inherit; }
 
   .site-map {
     padding-bottom: 2%; }
@@ -225,6 +227,10 @@ footer {
     padding-bottom: 2%; } }
 /* Screen widths 650px and greater */
 @media screen and (min-width: 650px) {
+  /* general layout */
+  .container {
+    padding: 1.5% 5%; }
+
   /* header */
   header .title {
     width: 40%; }
@@ -253,6 +259,11 @@ footer {
     padding-right: 2%; }
     .category:nth-child(3n+1) {
       padding-right: 0%; } }
+/* Screen widths 800px and greater */
+@media screen and (min-width: 800px) {
+  /* general layout */
+  .container {
+    padding: 1% 5%; } }
 /* General media queries */
 @viewport {
   width: device-width;
