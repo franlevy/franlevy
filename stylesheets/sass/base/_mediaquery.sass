@@ -1,4 +1,69 @@
-/* MEDIA QUERIES */
+/**** MEDIA QUERIES ****/
+
+/* Screen widths 500px and greater */
+@media screen and (min-width: 500px)
+    /* general layout */
+    .container
+        padding: 2% 5%
+        width: 90%
+        max-width: 1000px
+
+    /* footer */
+    footer
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%, url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
+        background: -moz-linear-gradient(top, $footer-bg 0%, $footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$footer-bg), color-stop(100%,$footer-bg)), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
+        background: -webkit-linear-gradient(top, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
+        background: -o-linear-gradient(top, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
+        background: -ms-linear-gradient(top, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
+        background: linear-gradient(to bottom, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
+    .social-media
+        text-align: right    
+    .site-map
+        padding:
+            top: 2%
+            bottom: 0
+    .copyright
+        padding:
+            bottom: 2%   
+
+
+/* Screen widths 650px and greater */
+@media screen and (min-width: 650px)
+    /* header */
+    header
+        .title
+            width: 40%
+
+    /* navigation */
+    .nav-btn
+        display: none
+
+    nav
+        clear: none
+        float: right
+        width: 60%
+        text-align: right
+        background-color: transparent
+
+        li
+            padding: 2% 3%
+            display: inline-block
+
+            &:nth-child(2)
+                padding-top: inherit
+                padding-bottom: inherit
+    
+    /* main content */
+    .category
+        width: 32%
+        float: left
+        padding-right: 2%
+
+        &:nth-child(3n+1)
+            padding-right: 0%
+
+
 
 /* General media queries */
 @viewport
@@ -6,19 +71,4 @@
     zoom: 1
 
 img, video, canvas
-    max-width: 100% 
-
-
-/* Screen widths 400px and greater */
-@media screen and (min-width: 400px)
-    .social-media
-        background: url('/images/background/gray-stripe1.png') repeat-x top left
-
-
-/* Screen widths 800px and greater */
-@media screen and (min-width: 800px)
-    .navicon
-        display: none
-
-
-
+    max-width: 100%

@@ -4,8 +4,9 @@
     %head
         %title
             Home | Fran Levy
-        %link(rel='stylesheet' type='text/css' href='stylesheets/global.css')
-        %script(src='navicon.js')
+        %link(rel="stylesheet" type="text/css" href="stylesheets/global.css")
+        %script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js")
+        %script(src="javascript/script.js")
 
     %body
         / Header and Navigation
@@ -13,47 +14,76 @@
             .container
                 .title
                     %h1
-                        %a(href='index.html')Fran Levy
-                .toggle
+                        %a(href="index.html")Fran Levy
+                .nav-btn
                     %a.navicon.link(href="#mainmenu")
-        %nav
-            .container
                 #mainmenu
-                    %ul.link.many-lines
+                    %nav
+                        %ul
+                            %li
+                                %a(href='#')About
+                            %li
+                                %a(href='#')Portfolio
+                            %li
+                                %a(href='#') Contact
+        / Main Content
+        %section
+            .container
+                %h2
+                    This is only a test.
+                %p
+                    Who I am: A few pithy sentences, maybe a photo or avatar.
+                %article
+                    %h3
+                        Mad skills
+                    .category
+                        %p
+                            (Insert design icon)
+                        %p
+                            Attractive, relevant design. I will work with you to create or customize beautiful designs and layouts that best reflect your products or services.
+                    .category
+                        %p
+                            (Insert standard HTML5 and CSS3 icons)
+                        %p
+                            Front-end web development. 
+                    .category
+                        %p
+                            (Insert writing icon)
+                        %p
+                            Clear, concise content creation and editing.
+                %article
+                    %h3
+                        Work Samples
+                    .category
+                        %p
+                            Linked image to my past work.
+                    .category
+                        %p
+                            Linked image to my past work.
+                    .category
+                        %p
+                            Linked image to my past work.
+        / Footer
+        %footer
+            .social-media
+                .container
+                    %ul
+                        %li
+                            %a(href='#')Email icon
+                        %li
+                            %a(href='#')LinkedIn icon
+                        %li
+                            %a(href='#')GitHub
+            .site-map
+                .container
+                    %ul
                         %li
                             %a(href='#')About
                         %li
                             %a(href='#')Portfolio
                         %li
-                            %a(href='#') Contact
-        / Main Content
-        %section
-            .container
-                %h2
-                    Introduction to my website
-                %p
-                    Main content goes here.
-                %p
-                    Let's add some filler to see how it looks. Let's add some filler to see how it looks. Let's add some filler to see how it looks.
-                %p
-                    Let's add some filler to see how it looks.
-        / Footer
-        %footer
-            .social-media
-                %ul.link.one-line
-                    %li
-                        %a(href='#')Email icon
-                    %li
-                        %a(href='#')LinkedIn icon
-            .site-map
-                %ul.link.one-line
-                    %li
-                        %a(href='#')About
-                    %li
-                        %a(href='#')Portfolio
-                    %li
-                        %a(href='#')Contact
-            .container
+                            %a(href='#')Contact
+            .copyright
                 %h5
                     Copyright &copy; 2013 Fran Levy. All rights reserved.
 

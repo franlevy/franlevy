@@ -1,20 +1,17 @@
-/* FOOTER */
+/**** FOOTER ****/
 
 footer
-    border-top: solid .25em orange
+    border-top: 1% solid $orange
     text-align: center
     
 .social-media
     background-color: $social-bg
-    padding:
-        top: 2%
-        bottom: 2%
 
 .site-map
     padding:
-        top: 2%
-        bottom: 2%
-    @extend .small-bold-caps
+        top: 5%
+        bottom: 5%
+    +bold-caps(1.5em, 1.7em, 1em)
     a:link, a:visited, a:hover, a:active, a:focus
         padding: 0 2%
         border-right:
@@ -23,3 +20,7 @@ footer
             color: $black
         &:last-child
             border: none
+
+.copyright
+    padding:
+        bottom: 5%

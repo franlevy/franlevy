@@ -5,8 +5,8 @@ p
     font:
         size: 1.7em
         weight: normal
-    line-height: 1.2em
-    padding-top: 1em
+    line-height: 1.3em
+    padding-top: 0.75em
 
 h1
     font:
@@ -15,16 +15,12 @@ h1
     color: $black
 
 h2
-    font:
-        size: 2em
-    line-height: 1.2em
-    letter-spacing: 0.025em
-    text-transform: uppercase
+    +bold-caps(2em, 2em, 0em)
 
 h3
     color: $black
-    text-align: center
-    @extend .small-bold-caps
+    text-align: left
+    +bold-caps(1.7em, 1.8em, 1em)
 
 h4
     font:
@@ -33,21 +29,12 @@ h4
         weight: normal
     text-transform: capitalize
     text-align: center
-    line-height: 2em
     color: $serif-heading
 
 h5
     font:
-        size: 1.6em
+        size: 1.7em
         weight: normal
-    line-height: 1.2em
-
-.small-bold-caps
-    font:
-        weight: bold
-        size: 1.5em
-    letter-spacing: 0.025em
-    text-transform: uppercase
 
 a
     text-decoration: none
@@ -55,3 +42,6 @@ a
     
 a:hover, a:active, a:focus
     color: $link-hover
+
+li
+    display: inline-block
