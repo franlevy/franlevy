@@ -15,12 +15,12 @@ h1
     color: $black
 
 h2
-    +bold-caps(2em, 2em, 0em)
+    +bold-caps(2em, 2em, 0.025em, 0em)
 
 h3
     color: $black
     text-align: left
-    +bold-caps(1.7em, 1.8em, 1em)
+    +bold-caps(1.7em, 1.8em, 0.025em, 1em)
 
 h4
     font:
@@ -36,9 +36,9 @@ h5
         size: 1.7em
         weight: normal
 
-a
+a:link, a:visited
     text-decoration: none
-    color: $black
+    color: $orange
     
 a:hover, a:active, a:focus
     color: $link-hover
