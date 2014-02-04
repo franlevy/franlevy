@@ -181,14 +181,14 @@ footer {
   padding-bottom: 5%;
   font-weight: bold;
   font-size: 1.5em;
-  line-height: 1.7em;
+  line-height: 1.7;
   letter-spacing: 0.025em;
   text-transform: uppercase;
   padding-top: 1em; }
   .site-map a:link, .site-map a:visited, .site-map a:hover, .site-map a:active, .site-map a:focus {
-    padding: 0 2%;
+    padding: 0% 2%;
     color: black;
-    border-right-width: 0.15em;
+    border-right-width: 1%;
     border-right-style: solid;
     border-right-color: black; }
     .site-map a:link:last-child, .site-map a:visited:last-child, .site-map a:hover:last-child, .site-map a:active:last-child, .site-map a:focus:last-child {
@@ -254,9 +254,10 @@ footer {
 
   /* main content */
   .category {
-    width: 32%;
+    width: 27%;
     float: left;
-    padding-right: 2%; }
+    padding-right: 6.5%;
+    background-color: #e07e76; }
     .category:nth-child(3n+1) {
       padding-right: 0%; } }
 /* Screen widths 800px and greater */
