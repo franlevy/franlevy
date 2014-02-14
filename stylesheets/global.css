@@ -89,7 +89,7 @@ li {
 body {
   font-family: Tahoma, sans-serif;
   font-size: 10px;
-  background: #bbb8cc; }
+  background: #fcfff0; }
 
 .container {
   margin: 0 auto;
@@ -152,7 +152,10 @@ nav {
 /* MAIN CONTENT */
 section {
   width: 100%;
-  background-color: #f0f1f2;
+  background-color: #fefeae;
+  background-image: url("../images/background/basecamp-whiter.png");
+  background-position: top left;
+  background-repeat: repeat;
   border-top: 0.25em solid #ffa400;
   border-bottom: 0.25em solid #ffa400;
   padding-top: 1.5%;
@@ -203,12 +206,12 @@ footer {
   /* general layout */
   body {
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%, url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
-    background: -moz-linear-gradient(top, rgba(187, 184, 204, 0.75) 0%, rgba(187, 184, 204, 0.75) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(187, 184, 204, 0.75)), color-stop(100%, rgba(187, 184, 204, 0.75))), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
-    background: -webkit-linear-gradient(top, rgba(187, 184, 204, 0.75) 0%, rgba(187, 184, 204, 0.75) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
-    background: -o-linear-gradient(top, rgba(187, 184, 204, 0.75) 0%, rgba(187, 184, 204, 0.75) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
-    background: -ms-linear-gradient(top, rgba(187, 184, 204, 0.75) 0%, rgba(187, 184, 204, 0.75) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
-    background: linear-gradient(to bottom, rgba(187, 184, 204, 0.75) 0%, rgba(187, 184, 204, 0.75) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%; }
+    background: -moz-linear-gradient(top, rgba(252, 255, 240, 0.75) 0%, rgba(252, 255, 240, 0.75) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(252, 255, 240, 0.75)), color-stop(100%, rgba(252, 255, 240, 0.75))), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
+    background: -webkit-linear-gradient(top, rgba(252, 255, 240, 0.75) 0%, rgba(252, 255, 240, 0.75) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
+    background: -o-linear-gradient(top, rgba(252, 255, 240, 0.75) 0%, rgba(252, 255, 240, 0.75) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
+    background: -ms-linear-gradient(top, rgba(252, 255, 240, 0.75) 0%, rgba(252, 255, 240, 0.75) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%;
+    background: linear-gradient(to bottom, rgba(252, 255, 240, 0.75) 0%, rgba(252, 255, 240, 0.75) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%; }
 
   .container {
     padding: 2% 5%;
@@ -258,8 +261,7 @@ footer {
   .category {
     width: 29%;
     float: left;
-    padding-right: 6.5%;
-    background-color: #e07e76; }
+    padding-right: 6.5%; }
     .category:nth-child(3n+1) {
       padding-right: 0%; } }
 /* Screen widths 800px and greater */
