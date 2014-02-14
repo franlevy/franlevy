@@ -41,7 +41,7 @@ p {
   padding-top: 0.75em; }
 
 h1 {
-  font-family: Times, serif;
+  font-family: Tahoma, sans-serif;
   font-size: 4em;
   color: black; }
 
@@ -256,7 +256,7 @@ footer {
 
   /* main content */
   .category {
-    width: 27%;
+    width: 29%;
     float: left;
     padding-right: 6.5%;
     background-color: #e07e76; }
