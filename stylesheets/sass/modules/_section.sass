@@ -2,13 +2,22 @@
 
 section
     width: 100%
-    background-color: $off-white
+    +bg-img($content-bg, top left, repeat)
+    border:
+        top: 0.25em solid $orange
+        bottom: 0.25em solid $orange
     padding:
         top: 1.5%
         bottom: 2.5%
-
     h2, h3
         text-align: center
+    
+    a
+    color: $black
+        
+    a:hover, a:focus
+        color: $orange
+
 
 article
     clear: both

@@ -3,37 +3,41 @@
 /* Screen widths 500px and greater */
 @media screen and (min-width: 500px)
     /* general layout */
+    body
+        +transparent-bg-img($lighter, 0.75)
+
     .container
         padding: 2% 5%
         width: 90%
         max-width: 1000px
 
+    /* header */
+    .title
+        padding-top: 3%
+
     /* footer */
-    footer
-        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%, url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: -moz-linear-gradient(top, $footer-bg 0%, $footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$footer-bg), color-stop(100%,$footer-bg)), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: -webkit-linear-gradient(top, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: -o-linear-gradient(top, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: -ms-linear-gradient(top, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-        background: linear-gradient(to bottom, $footer-bg 0%,$footer-bg 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
     .social-media
-        text-align: right    
+        text-align: right
+        padding: 2% inherit
+
     .site-map
         padding:
-            top: 2%
-            bottom: 0
+            bottom: 2%
     .copyright
         padding:
-            bottom: 2%   
+            bottom: 2%  
 
 
 /* Screen widths 650px and greater */
 @media screen and (min-width: 650px)
+    /* general layout */
+    .container
+        padding: 1.5% 5%
+
     /* header */
-    header
-        .title
-            width: 40%
+    .title
+        width: 40%
+        padding-top: 2%
 
     /* navigation */
     .nav-btn
@@ -45,24 +49,37 @@
         width: 60%
         text-align: right
         background-color: transparent
+        padding-top: 2.75%
 
         li
             padding: 2% 3%
             display: inline-block
+            border-top: none
 
             &:nth-child(2)
                 padding-top: inherit
                 padding-bottom: inherit
+
+            &:last-child
+                padding-right: 0
     
     /* main content */
     .category
-        width: 32%
+        width: 29%
         float: left
-        padding-right: 2%
+        padding-right: (13%/2)
 
         &:nth-child(3n+1)
             padding-right: 0%
 
+/* Screen widths 800px and greater */
+@media screen and (min-width: 800px)
+    /* general layout */
+    .container
+        padding: 1% 5%
+    /* navigation */
+    nav
+        padding-top: 1.9%
 
 
 /* General media queries */

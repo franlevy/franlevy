@@ -18,8 +18,8 @@
     width: 3em
     height: .5em
     line-height: 0
-    border-top: 1.5em double $black
-    border-bottom: .5em solid $black
+    border-top: 1.5em double $orange
+    border-bottom: .5em solid $orange
     float: right
 
 /* MAIN MENU NAVIGATION */
@@ -29,20 +29,15 @@ nav
     float: left
     text-align: left
     width: 100%
-    background-color: $red-shadow
-    +bold-caps(1.5em, 1.7em, 0)
-
-    a
-        color: $orange
-        
-        &:hover, a:focus
-            color: $white
+    background-color: $nav-bg
+    +bold-caps(1.5em, 1.7, 0.07em, 4%)
 
     li
         margin: 0
         padding: 2% 0
         display: block
-    
+        border-top: 0.09em dotted $cream
+
         &:nth-child(2)
             padding-top: 2.5%
             padding-bottom: 2.5%
