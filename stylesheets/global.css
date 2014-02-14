@@ -185,7 +185,10 @@ article {
 
 /*** FOOTER *** */
 footer {
-  text-align: center; }
+  text-align: center;
+  background-image: url("../images/background/basecamp-whiter.png");
+  background-position: top left;
+  background-repeat: repeat; }
 
 .social-media {
   padding: 5% inherit;
@@ -218,11 +221,6 @@ footer {
 /* Screen widths 500px and greater */
 @media screen and (min-width: 500px) {
   /* general layout */
-  body {
-    background-image: url("../images/background/basecamp-whiter.png");
-    background-position: top left;
-    background-repeat: repeat; }
-
   .container {
     padding: 2% 5%;
     width: 90%;
