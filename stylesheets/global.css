@@ -80,7 +80,7 @@ a:link, a:visited {
   color: #ffa400; }
 
 a:hover, a:active, a:focus {
-  color: #f0f1f2; }
+  color: #fdfff0; }
 
 li {
   display: inline-block; }
@@ -108,7 +108,8 @@ header {
 .title {
   float: left;
   width: 70%;
-  padding-bottom: 2%; }
+  padding-top: 4%;
+  padding-bottom: 3%; }
   .title a {
     color: #ffa400; }
 
@@ -134,17 +135,18 @@ nav {
   float: left;
   text-align: left;
   width: 100%;
-  background-color: #f0f1f2;
+  background-color: #453f3f;
   font-weight: bold;
   font-size: 1.5em;
   line-height: 1.7;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  padding-top: 0; }
+  padding-top: 4%; }
   nav li {
     margin: 0;
     padding: 2% 0;
-    display: block; }
+    display: block;
+    border-top: 0.09em dotted #fcfff0; }
     nav li:nth-child(2) {
       padding-top: 2.5%;
       padding-bottom: 2.5%; }
@@ -152,8 +154,7 @@ nav {
 /* MAIN CONTENT */
 section {
   width: 100%;
-  background-color: #fefeae;
-  background-image: url("../images/background/basecamp-whiter.png");
+  background-image: url("../images/background/basecamp-grayer.png");
   background-position: top left;
   background-repeat: repeat;
   border-top: 0.25em solid #ffa400;
@@ -218,6 +219,10 @@ footer {
     width: 90%;
     max-width: 1000px; }
 
+  /* header */
+  .title {
+    padding-top: 3%; }
+
   /* footer */
   .social-media {
     text-align: right;
@@ -235,8 +240,9 @@ footer {
     padding: 1.5% 5%; }
 
   /* header */
-  header .title {
-    width: 40%; }
+  .title {
+    width: 40%;
+    padding-top: 2%; }
 
   /* navigation */
   .nav-btn {
@@ -247,10 +253,12 @@ footer {
     float: right;
     width: 60%;
     text-align: right;
-    background-color: transparent; }
+    background-color: transparent;
+    padding-top: 2.75%; }
     nav li {
       padding: 2% 3%;
-      display: inline-block; }
+      display: inline-block;
+      border-top: none; }
       nav li:nth-child(2) {
         padding-top: inherit;
         padding-bottom: inherit; }
@@ -268,7 +276,11 @@ footer {
 @media screen and (min-width: 800px) {
   /* general layout */
   .container {
-    padding: 1% 5%; } }
+    padding: 1% 5%; }
+
+  /* navigation */
+  nav {
+    padding-top: 1.9%; } }
 /* General media queries */
 @viewport {
   width: device-width;
