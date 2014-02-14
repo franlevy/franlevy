@@ -145,8 +145,10 @@ nav {
   text-transform: uppercase;
   padding-top: 3%;
   color: #1b1c1d; }
-  nav a:link, nav a:visited, nav a:hover, nav a:active, nav a:focus {
+  nav a:link, nav a:visited, nav a:hover, nav a:focus {
     color: #ffa400; }
+  nav a:active {
+    color: #fdfff0; }
   nav li {
     margin: 0;
     padding: 2.5% 0;
