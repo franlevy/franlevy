@@ -15,25 +15,27 @@
           </ul>
         </div>
       </div>
-      <div class='site-map'>
-        <div class='container'>
-          <ul>
-            <li>
-              <a href='#'>Portfolio</a>
-            </li>
-            <li>
-              <a href='#'>About</a>
-            </li>
-            <li>
-              <a href='#'>Contact</a>
-            </li>
-          </ul>
+      <div class='site-copy-wrap'>
+        <div class='site-map'>
+          <div class='container'>
+            <ul>
+              <li>
+                <a href='#'>Portfolio</a>
+              </li>
+              <li>
+                <a href='#'>About</a>
+              </li>
+              <li>
+                <a href='#'>Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class='copyright'>
-        <p>
-          Copyright &copy; 2013 Fran Levy. All rights reserved.
-        </p>
+        <div class='copyright'>
+          <p>
+            Copyright &copy; 2013 Fran Levy. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   </body>

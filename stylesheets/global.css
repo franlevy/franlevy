@@ -107,6 +107,9 @@ body {
 /*** HEADER *** */
 header {
   background-color: #453f3f;
+  -webkit-box-shadow: inset 0 -1rem 2rem -1rem black;
+  -moz-box-shadow: inset 0 -1rem 2rem -1rem black;
+  box-shadow: inset 0 -1rem 2rem -1rem black;
   width: 100%;
   overflow: overlay; }
 
@@ -123,7 +126,7 @@ header {
 .nav-btn {
   float: right;
   width: 30%;
-  padding: auto; }
+  padding-top: 8%; }
 
 .navicon {
   display: block;
@@ -142,6 +145,9 @@ nav {
   clear: both;
   float: left;
   text-align: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   background-color: #453f3f;
   font-weight: bold;
@@ -172,8 +178,6 @@ nav {
 /* MAIN CONTENT */
 section {
   width: 100%;
-  border-top: 0.25rem solid #ffa400;
-  border-bottom: 0.25rem solid #ffa400;
   padding-top: 1.5%;
   padding-bottom: 2.5%;
   background-image: url("../images/background/basecamp-whiter.png");
@@ -193,17 +197,25 @@ article {
 /*** FOOTER *** */
 footer {
   text-align: center;
-  background-image: url("../images/background/basecamp-whiter.png");
-  background-position: top left;
-  background-repeat: repeat; }
+  background-color: #63625f; }
+  footer .site-copy-wrap {
+    padding: 0;
+    -webkit-box-shadow: inset 0rem 2rem 2rem -1rem #453f3f;
+    -moz-box-shadow: inset 0rem 2rem 2rem -1rem #453f3f;
+    box-shadow: inset 0rem 2rem 2rem -1rem #453f3f; }
 
 .social-media {
   padding: 5% inherit;
-  background-color: #453f3f; }
+  background-color: #453f3f;
+  -webkit-box-shadow: inset 0 1rem 2rem -1rem black;
+  -moz-box-shadow: inset 0 1rem 2rem -1rem black;
+  box-shadow: inset 0 1rem 2rem -1rem black;
+  font-size: 1.5rem; }
   .social-media li {
     padding-left: 2%; }
 
 .site-map {
+  padding-top: 3%;
   padding-bottom: 5%;
   font-weight: bold;
   font-size: 1.5rem;
@@ -212,21 +224,17 @@ footer {
   text-transform: uppercase;
   padding-top: 1rem;
   color: #1b1c1d; }
-  .site-map li:last-child a {
-    border: none; }
+  .site-map li {
+    display: block; }
   .site-map a:link, .site-map a:visited, .site-map a:hover, .site-map a:active, .site-map a:focus {
-    padding: 0% 15%;
-    color: black;
-    border-right-style: solid;
-    border-right-color: black;
-    border-right-width: 1%; }
+    color: black; }
 
 .copyright {
   padding-bottom: 1.5rem; }
 
 /*** MEDIA QUERIES *** */
 /* Screen widths 500px and greater */
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 500px) {
   /* general layout */
   .container {
     padding: 2% 5%;
@@ -245,13 +253,19 @@ footer {
     text-align: right;
     padding: 2% inherit; }
 
+  .site-copy-wrap {
+    -webkit-box-shadow: inset 0rem 2rem 2rem -1rem #453f3f;
+    -moz-box-shadow: inset 0rem 2rem 2rem -1rem #453f3f;
+    box-shadow: inset 0rem 2rem 2rem -1rem #453f3f; }
+
   .site-map {
+    padding-top: 3%;
     padding-bottom: 2%; }
 
   .copyright {
     padding-bottom: 2%; } }
 /* Screen widths 650px and greater */
-@media screen and (min-width: 65rem) {
+@media screen and (min-width: 650px) {
   /* general layout */
   .container {
     padding: 1.5% 5%; }
@@ -295,9 +309,20 @@ footer {
     float: left;
     padding-right: 6.5%; }
     .category:nth-child(3n+1) {
-      padding-right: 0%; } }
+      padding-right: 0%; }
+
+  /* footer */
+  .site-map li {
+    display: inline-block; }
+    .site-map li:last-child a {
+      border: none; }
+  .site-map a:link, .site-map a:visited, .site-map a:hover, .site-map a:active, .site-map a:focus {
+    padding: 0 3rem;
+    border-right-style: solid;
+    border-right-color: black;
+    border-right-width: 0.25rem; } }
 /* Screen widths 800px and greater */
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 800px) {
   /* general layout */
   .container {
     padding: 1% 5%; }
@@ -305,6 +330,11 @@ footer {
   /* navigation */
   nav {
     padding-top: 1.9%; } }
+/* Screen widths 800px and greater */
+@media screen and (min-width: 1000px) {
+  /* navigation */
+  nav {
+    padding-top: 1%; } }
 /* General media queries */
 @viewport {
   width: extend-to-zoom;

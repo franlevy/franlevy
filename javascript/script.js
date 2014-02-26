@@ -13,10 +13,10 @@ $(document).ready(function() {
     function myWinWidth() {
         var winWidth = $(window).width();
         console.log(winWidth);    
-            if(winWidth > 65){
+            if(winWidth > 650){
                 $("#mainmenu").show();          
             }
-            if(winWidth < 65){
+            if(winWidth < 650){
                 $("#mainmenu").hide();          
             }
         return false;

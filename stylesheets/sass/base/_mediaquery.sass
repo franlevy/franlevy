@@ -1,7 +1,7 @@
 /**** MEDIA QUERIES ****/
 
 /* Screen widths 500px and greater */
-@media screen and (min-width: 50rem)
+@media screen and (min-width: 500px)
     /* general layout */
     .container
         padding: 2% 5%
@@ -20,16 +20,21 @@
         text-align: right
         padding: 2% inherit
 
+    .site-copy-wrap
+        +shadow(inset 0rem 2rem 2rem -1rem $social-bg)
+
     .site-map
         padding:
+            top: 3%
             bottom: 2%
+
     .copyright
         padding:
             bottom: 2%  
 
 
 /* Screen widths 650px and greater */
-@media screen and (min-width: 65rem)
+@media screen and (min-width: 650px)
     /* general layout */
     .container
         padding: 1.5% 5%
@@ -81,14 +86,37 @@
         &:nth-child(3n+1)
             padding-right: 0%
 
+    /* footer */
+    .site-map
+        li
+            display: inline-block
+
+            &:last-child a
+                border: none
+
+        a:link, a:visited, a:hover, a:active, a:focus
+            padding: 0 3rem
+            border-right:
+                style: solid
+                color: $black
+            border-right-width: 0.25rem
+
+
 /* Screen widths 800px and greater */
-@media screen and (min-width: 80rem)
+@media screen and (min-width: 800px)
     /* general layout */
     .container
         padding: 1% 5%
     /* navigation */
     nav
         padding-top: 1.9%
+
+
+/* Screen widths 800px and greater */
+@media screen and (min-width: 1000px)
+    /* navigation */
+    nav
+        padding-top: 1%
 
 
 /* General media queries */

@@ -3,10 +3,10 @@
 <section>
   <div class='container'>
     <h2>
-      This is only a test.
+      Who I Am
     </h2>
     <p>
-      Who I am: A few pithy sentences, maybe a photo or avatar.
+      This website is under construction. Check back soon, and here you'll find a few pithy sentences about me. Maybe there'll even be a photo or avatar.
     </p>
     <article>
       <h3>
