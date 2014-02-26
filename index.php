@@ -14,24 +14,15 @@
       </h3>
       <div class='category'>
         <p>
-          (Insert design icon)
-        </p>
-        <p>
           Attractive, relevant design. I will work with you to create or customize beautiful designs and layouts that best reflect your products or services.
         </p>
       </div>
       <div class='category'>
         <p>
-          (Insert standard HTML5 and CSS3 icons)
-        </p>
-        <p>
           Front-end web development.
         </p>
       </div>
       <div class='category'>
-        <p>
-          (Insert writing icon)
-        </p>
         <p>
           Clear, concise content creation and editing.
         </p>

@@ -13,10 +13,10 @@ $(document).ready(function() {
     function myWinWidth() {
         var winWidth = $(window).width();
         console.log(winWidth);    
-            if(winWidth > 650){
+            if(winWidth > 65){
                 $("#mainmenu").show();          
             }
-            if(winWidth < 650){
+            if(winWidth < 65){
                 $("#mainmenu").hide();          
             }
         return false;
@@ -30,7 +30,7 @@ $(document).ready(function() {
     myWinWidth();
     
     $(navicon).click(function(event) {
-        $(mainmenu).slideToggle(600);
+        $(mainmenu).slideToggle(500);
         event.preventDefault();
     });
 });
