@@ -22,8 +22,7 @@
               <a href='#'>Portfolio</a>
             </li>
             <li>
-              <a href='#'></a>
-              About
+              <a href='#'>About</a>
             </li>
             <li>
               <a href='#'>Contact</a>

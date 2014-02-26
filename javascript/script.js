@@ -7,14 +7,17 @@ $(document).ready(function() {
     // Check browser window size to determine whether the main menu is hidden or visible
     $(window).resize(function() {
         // Add a set timeout to prevent resource hogging
-        myWinWidth(500);
+        myWinWidth();
     });
 
     function myWinWidth() {
         var winWidth = $(window).width();
         console.log(winWidth);    
             if(winWidth > 650){
-                     $("#mainmenu").show();          
+                $("#mainmenu").show();          
+            }
+            if(winWidth < 650){
+                $("#mainmenu").hide();          
             }
         return false;
     };
@@ -23,9 +26,11 @@ $(document).ready(function() {
     var navicon = ".navicon";
     var mainmenu = "#mainmenu";
 
-    $("#mainmenu").hide();
+    // $(mainmenu).hide();
+    myWinWidth();
     
-    $(".navicon").click(function() {
-        $("#mainmenu").slideToggle("slow");
+    $(navicon).click(function(event) {
+        $(mainmenu).slideToggle(600);
+        event.preventDefault();
     });
 });
