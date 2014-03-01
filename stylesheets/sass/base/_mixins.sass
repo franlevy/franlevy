@@ -1,20 +1,25 @@
 // MIXINS
+
+// Shading
 =shadow($shadow...)
     -webkit-box-shadow: $shadow
     -moz-box-shadow: $shadow
     box-shadow: $shadow
 
+// Border radius
 =radius($radius)
     -webkit-border-radius: $radius
     -moz-border-radius: $radius
     border-radius: $radius
 
+// Background-image
 =bg-img($imgpath, $position, $repeat)
     background:
         image: url($imgpath)
         position: $position
         repeat: $repeat
 
+// Bold capital lettered font
 =bold-caps($fontsize, $lineheight, $letterspace, $paddingtop)
     font:
         weight: bold
@@ -25,6 +30,7 @@
     padding-top: $paddingtop
     color: $dark-font
 
+// Transparent background image
 =transparent-bg-img($color, $transparency)
     background: -moz-linear-gradient(top, rgba(0, 0, 0, $transparency) 0%, rgba(0, 0, 0, $transparency) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%, url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
     background: -moz-linear-gradient(top, rgba($color, $transparency) 0%, rgba($color, $transparency) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
@@ -34,6 +40,7 @@
     background: -ms-linear-gradient(top, rgba($color, $transparency) 0%,rgba($color, $transparency) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
     background: linear-gradient(to bottom, rgba($color, $transparency) 0%,rgba($color, $transparency) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
 
+// Box model
 =box-sizing($box-model)
     -webkit-box-sizing: $box-model // Safari <= 5
     -moz-box-sizing: $box-model // Firefox <= 19
