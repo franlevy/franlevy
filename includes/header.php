@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999.html'>
-  <head>
-    <title>
-      Home | Fran Levy
-    </title>
+  <head>    
+    <title><?php echo $pageTitle; ?> | Fran Levy</title>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <link href='stylesheets/global.css' rel='stylesheet' type='text/css'>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>

@@ -1,10 +1,10 @@
-<?php include("includes/header.php"); ?>
+<?php
+$pageTitle = "Website Design and Development";
+include("includes/header.php");
+?>
 <!-- Main Content -->
 <section>
   <div class='container'>
-    <h2>
-      Who I Am
-    </h2>
     <p>
       This website is under construction. Check back soon, and here you'll find a few pithy sentences about me. Maybe there'll even be a photo or avatar.
     </p>
