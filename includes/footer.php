@@ -3,16 +3,11 @@
       <div class='social-media'>
         <div class='container'>
           <ul>
-            <li>
-              <a href='#'>Email</a>
-            </li>
-            <li>
-              <a href='#'>LinkedIn</a>
-            </li>
-            <li>
-              <a href='#'>GitHub</a>
-            </li>
+            <li data-icon="\f00a">Github</li>
+            <li data-icon="\f03b">Email</li>
           </ul>
+          
+        
         </div>
       </div>
       <div class='site-copy-wrap'>
