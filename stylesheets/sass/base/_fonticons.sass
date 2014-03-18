@@ -1,0 +1,36 @@
+/**** FONT ICONS ****/
+
+@font-face
+    font-family: 'Octicons Regular'
+    src: url("https://a248.e.akamai.net/assets.github.com/fonts/octicons/octicons-regular-webfont.eot?ade8e027")
+    src: url("https://a248.e.akamai.net/assets.github.com/fonts/octicons/octicons-regular-webfont.eot?ade8e027#iefix") format("embedded-opentype"), url("https://a248.e.akamai.net/assets.github.com/fonts/octicons/octicons-regular-webfont.woff?fca05081") format("woff"), url("https://a248.e.akamai.net/assets.github.com/fonts/octicons/octicons-regular-webfont.ttf?b2778fb1") format("truetype"), url("https://a248.e.akamai.net/assets.github.com/fonts/octicons/octicons-regular-webfont.svg?b5c3b089#newFontRegular") format("svg")
+    font-weight: normal
+    font-style: normal
+
+[data-icon]:before
+    font-family: 'Octicons Regular'
+    content: attr(data-icon)
+    speak: none
+
+.mega-octicon
+    font: normal normal 32px octicons
+    line-height: 1
+    display: inline-block
+    text-decoration: none
+    -webkit-font-smoothing: antialiased
+
+.octicon-mark-github
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+    
+    &:before
+        content: '$octicon'
+
+.octicon-mail
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+    
+    &:before
+        content: '$email'
