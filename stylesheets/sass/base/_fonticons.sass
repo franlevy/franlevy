@@ -11,26 +11,29 @@
     font-family: 'Octicons Regular'
     content: attr(data-icon)
     speak: none
-
-.mega-octicon
-    font: normal normal 32px octicons
-    line-height: 1
+    -webkit-font-smoothing: antialiased
+    apple-font-smoothing: antialiased
+    text-rendering: optimizeLegibility
     display: inline-block
     text-decoration: none
-    -webkit-font-smoothing: antialiased
 
 .octicon-mark-github
-    height: 24px;
-    width: 24px;
-    font-size: 24px;
+    height: 24px
+    width: 24px
+    font-size: 24px
     
     &:before
-        content: '$octicon'
+        content: "\f00a"
 
 .octicon-mail
-    height: 24px;
-    width: 24px;
-    font-size: 24px;
+    height: 24px
+    width: 24px
+    font-size: 24px
     
     &:before
-        content: '$email'
+        content: '\f03b'
+
+.screen-reader-text
+    position: absolute
+    top: -9999px
+    left: -9999px

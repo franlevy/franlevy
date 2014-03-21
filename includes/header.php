@@ -4,6 +4,7 @@
     <head>    
       <title><?php echo $pageTitle; ?> | Fran Levy</title>
       <meta content='width=device-width, initial-scale=1' name='viewport'>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <link href='stylesheets/global.css' rel='stylesheet' type='text/css'>
       <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
       <script src='javascript/script.js'></script>

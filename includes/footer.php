@@ -6,13 +6,19 @@
             <ul>
               <li>
                 <a href="https://github.com/franlevy/franlevy">
-                  <span class=​"mega-octicon octicon-mark-github" title=​"GitHub">​
+                  <span class="octicon-mark-github" data-icon="octicon-mark-github" title=​"GitHub">​
+                  </span>
+                  <span class="screen-reader-text">
+                    Check out my GitHub repository
                   </span>
                 </a>
               </li>
               <li>
-                <a href="contact.php"
-                  <span class=​"mega-octicon octicon-mail" title=​"Email">​
+                <a href="contact.php">
+                  <span class="octicon-mail" data-icon=​"octicon-mail" title=​"Email">​
+                  </span>
+                  <span class="screen-reader-text">
+                    Check out my LinkedIn profile
                   </span>
                 </a>
               </li>
