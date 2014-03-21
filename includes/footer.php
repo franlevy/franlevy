@@ -6,11 +6,8 @@
             <ul>
               <li>
                 <a href="https://github.com/franlevy/franlevy">
-                  <span class="octicon-mark-github" data-icon="octicon-mark-github" title=​"GitHub">​
-                  </span>
-                  <span class="screen-reader-text">
-                    Check out my GitHub repository
-                  </span>
+                  <div class="icon-octocat_orangeFFA400" style="width: 75px; height: 75px">
+                  </div>
                 </a>
               </li>
               <li>
