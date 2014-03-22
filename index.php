@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Website Design and Development";
+$pageTitle = "Home";
 include("includes/header.php");
 ?>
 <!-- Main Content -->

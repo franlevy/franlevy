@@ -5,18 +5,15 @@
           <div class='container'>
             <ul>
               <li>
-                <a href="https://github.com/franlevy/franlevy">
-                  <div class="icon-octocat_orangeFFA400" style="width: 75px; height: 75px">
+                <a href="https://github.com/franlevy/franlevy" alt="Check out my GitHub repository">
+                  <div class="icon icon-octocat_orangeFFA400">
                   </div>
                 </a>
               </li>
               <li>
-                <a href="contact.php">
-                  <span class="octicon-mail" data-icon=​"octicon-mail" title=​"Email">​
-                  </span>
-                  <span class="screen-reader-text">
-                    Check out my LinkedIn profile
-                  </span>
+                <a href="https://www.linkedin.com/in/franlevy/" alt="Check out my LinkedIn profile">
+                  <div class="icon icon-linkedin-hollow-text">
+                  </div>
                 </a>
               </li>
             </ul>
@@ -28,13 +25,13 @@
             <div class='container'>
               <ul>
                 <li>
-                  <a href='#'>Portfolio</a>
+                  <a href="portfolio.php">Portfolio</a>
                 </li>
                 <li>
-                  <a href='#'>About</a>
+                  <a href="about.php">About</a>
                 </li>
                 <li>
-                  <a href='#'>Contact</a>
+                  <a href="contact.php">Contact</a>
                 </li>
               </ul>
             </div>

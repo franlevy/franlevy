@@ -2,7 +2,7 @@
 <html xmlns='http://www.w3.org/1999.html'>
   <html lang="en-US">  
     <head>    
-      <title><?php echo $pageTitle; ?> | Fran Levy</title>
+      <title><?php echo $pageTitle; ?> | Fran Levy Web Design & Development</title>
       <meta content='width=device-width, initial-scale=1' name='viewport'>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <link href='stylesheets/global.css' rel='stylesheet' type='text/css'>
@@ -33,13 +33,13 @@
             <nav>
               <ul>
                 <li>
-                  <a href='#'>Portfolio</a>
+                  <a href="portfolio.php">Portfolio</a>
                 </li>
                 <li>
-                  <a href='#'>About</a>
+                  <a href="about.php">About</a>
                 </li>
                 <li>
-                  <a href='#'>Contact</a>
+                  <a href="contact.php">Contact</a>
                 </li>
               </ul>
             </nav>
