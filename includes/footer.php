@@ -39,7 +39,7 @@
           <!-- Copyright -->
           <div class='copyright'>
             <p>
-              Copyright &copy; <?php echo date('Y'); ?> Fran Levy. All rights reserved.
+              Copyright &copy; 2013 - <?php echo date('Y'); ?> Fran Levy. All rights reserved.
             </p>
           </div>
         </div>
