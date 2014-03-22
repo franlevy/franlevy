@@ -4,7 +4,7 @@
     background-size: 100%;
 }
 
-.icon-octocat_orangeFFA400:hover {
+.icon-octocat_orangeFFA400:hover, .icon-octocat_orangeFFA400:focus {
     background-image: url('png/octocat_white.png');
 }
 
