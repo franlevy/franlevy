@@ -1,0 +1,18 @@
+.icon-linkedin-orange {
+	background-image: url('png/linkedin-orange.png');
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+.icon-linkedin-orange:hover, .icon-linkedin-orange:focus {
+    background-image: url('png/linkedin-beige.png');
+}
+
+
+.icon-octocat-orange {
+	background-image: url('png/octocat-orange.png');
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+.icon-octocat-orange:hover, .icon-octocat-orange:focus{
+    background-image: url('png/octocat-beige.png');    
+}

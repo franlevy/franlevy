@@ -6,13 +6,13 @@
             <ul>
               <li>
                 <a href="https://github.com/franlevy/franlevy" alt="Check out my GitHub repository">
-                  <div class="icon icon-octocat_orangeFFA400">
+                  <div class="icon icon-octocat-orange">
                   </div>
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/franlevy/" alt="Check out my LinkedIn profile">
-                  <div class="icon icon-linkedin-hollow-text">
+                  <div class="icon icon-linkedin-orange">
                   </div>
                 </a>
               </li>
@@ -24,6 +24,9 @@
           <div class='site-map'>
             <div class='container'>
               <ul>
+                <li>
+                  <a href="index.php">Home</a>
+                </li>
                 <li>
                   <a href="portfolio.php">Portfolio</a>
                 </li>
