@@ -23,7 +23,7 @@
         <div class='container'>
           <div class='title'>
             <h1>
-              <a href='index.php'>Fran Levy</a>
+              <a href='index.php'>FRAN LEVY</a>
             </h1>
           </div>
           <div class='nav-btn'>
