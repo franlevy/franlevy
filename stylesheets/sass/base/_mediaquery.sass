@@ -29,7 +29,7 @@
     /* footer */
     .social-media
         text-align: right
-        padding: 1rem inherit 0rem
+        padding-top: 3rem
         +bg-img($basecamp-whiter-scallopbottom, top left, repeat-x)
 
     .site-copy-wrap
@@ -45,8 +45,8 @@
             bottom: 2%  
 
 
-/* Screen widths 650px and greater */
-@media screen and (min-width: 650px)
+/* Screen widths 700px and greater */
+@media screen and (min-width: 700px)
     /* general layout */
     .container
         padding: 1.5% 5%
@@ -76,7 +76,7 @@
             color: $link-hover
 
         li
-            padding: 2% 0% 2% 3%
+            padding: 2% 0% 0% 3%
             display: inline-block
 
             &:nth-child(2)
@@ -101,11 +101,15 @@
 
     /* footer */
     .social-media
-        padding: 2rem inherit 0%
+        padding-top: 3rem
 
     .site-map
+        +bold-caps(1.1rem, 2, 0.025rem, 1rem)
+
         li
             display: inline-block
+            padding-bottom: 0rem
+
 
             &:last-child a
                 border: none
@@ -117,18 +121,25 @@
                 color: $orange
             border-right-width: 0.1rem
 
+    .copyright
+        p
+            font-size: 1.0rem
+
 
 /* Screen widths 800px and greater */
 @media screen and (min-width: 800px)
     /* general layout */
     .container
         padding: 1% 5%
+
     /* navigation */
     nav
         padding-top: 1rem
+
     /* footer */
     .social-media
-        padding: 3.5rem inherit 0%
+        padding-top: 3rem
+
     .site-map
         a:link, a:visited, a:hover, a:active, a:focus
             padding: 0 2rem
@@ -139,9 +150,10 @@
     /* navigation */
     nav
         padding-top: 1rem
+    
     /* footer */
     .social-media
-        padding: 1rem inherit 0%
+        padding-top: 3rem
 
 
 /* General media queries */

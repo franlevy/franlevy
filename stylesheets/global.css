@@ -124,7 +124,7 @@ li {
 body {
   font-family: Georgia, Times, serif;
   font-size: 10px;
-  background: #63625f; }
+  background: #453f3f; }
 
 .container {
   margin: 0 auto;
@@ -146,6 +146,8 @@ header {
   background-color: #453f3f;
   width: 100%;
   overflow: overlay; }
+  header .container {
+    padding-bottom: 4%; }
 
 .title {
   float: left;
@@ -236,7 +238,7 @@ footer {
     padding: 0; }
 
 .social-media {
-  padding: 1rem inherit;
+  padding-top: 3rem;
   background-color: #453f3f;
   font-size: 1.5rem; }
   .social-media li {
@@ -246,19 +248,20 @@ footer {
   padding-bottom: 5%;
   font-family: "draftsmanregular";
   font-weight: bold;
-  font-size: 1.1rem;
-  line-height: 2;
-  letter-spacing: 0.025rem;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
-  padding-top: 1rem;
+  padding-top: 0;
   color: #1b1c1d; }
   .site-map li {
-    display: block; }
+    display: block;
+    padding-bottom: 0.5rem; }
 
 .copyright {
   padding-bottom: 1.5rem; }
   .copyright p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #ffa400; }
 
 /*** MEDIA QUERIES *** */
@@ -294,7 +297,7 @@ footer {
   /* footer */
   .social-media {
     text-align: right;
-    padding: 1rem inherit 0rem;
+    padding-top: 3rem;
     background-image: url("../images/background/basecamp-whiter_scallop3.png");
     background-position: top left;
     background-repeat: repeat-x; }
@@ -310,8 +313,8 @@ footer {
 
   .copyright {
     padding-bottom: 2%; } }
-/* Screen widths 650px and greater */
-@media screen and (min-width: 650px) {
+/* Screen widths 700px and greater */
+@media screen and (min-width: 700px) {
   /* general layout */
   .container {
     padding: 1.5% 5%; }
@@ -339,7 +342,7 @@ footer {
     nav a:hover, nav a:active, nav a:focus {
       color: #fdfff0; }
     nav li {
-      padding: 2% 0% 2% 3%;
+      padding: 2% 0% 0% 3%;
       display: inline-block; }
       nav li:nth-child(2) {
         padding-top: inherit;
@@ -359,17 +362,30 @@ footer {
 
   /* footer */
   .social-media {
-    padding: 2rem inherit 0%; }
+    padding-top: 3rem; }
 
-  .site-map li {
-    display: inline-block; }
-    .site-map li:last-child a {
-      border: none; }
-  .site-map a:link, .site-map a:visited, .site-map a:hover, .site-map a:active, .site-map a:focus {
-    padding: 0 2rem;
-    border-right-style: solid;
-    border-right-color: #ffa400;
-    border-right-width: 0.1rem; } }
+  .site-map {
+    font-family: "draftsmanregular";
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 2;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    color: #1b1c1d; }
+    .site-map li {
+      display: inline-block;
+      padding-bottom: 0rem; }
+      .site-map li:last-child a {
+        border: none; }
+    .site-map a:link, .site-map a:visited, .site-map a:hover, .site-map a:active, .site-map a:focus {
+      padding: 0 2rem;
+      border-right-style: solid;
+      border-right-color: #ffa400;
+      border-right-width: 0.1rem; }
+
+  .copyright p {
+    font-size: 1rem; } }
 /* Screen widths 800px and greater */
 @media screen and (min-width: 800px) {
   /* general layout */
@@ -382,7 +398,7 @@ footer {
 
   /* footer */
   .social-media {
-    padding: 3.5rem inherit 0%; }
+    padding-top: 3rem; }
 
   .site-map a:link, .site-map a:visited, .site-map a:hover, .site-map a:active, .site-map a:focus {
     padding: 0 2rem; } }
@@ -394,7 +410,7 @@ footer {
 
   /* footer */
   .social-media {
-    padding: 1rem inherit 0%; } }
+    padding-top: 3rem; } }
 /* General media queries */
 @viewport {
   width: extend-to-zoom;
