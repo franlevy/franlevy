@@ -12,9 +12,6 @@
             size: 2.9rem
 
     /* header */
-    header
-        +bg-img($basecamp-whiter-scalloptop, bottom left, repeat-x)
-
     .title
         padding-top: 0rem
     
@@ -22,18 +19,10 @@
     .nav-btn
         padding-top: 4.5%
     
-    /* main content */
-    section
-        +bg-img($section-bg, top left, repeat)
-
     /* footer */
     .social-media
         text-align: right
         padding-top: 3rem
-        +bg-img($basecamp-whiter-scallopbottom, top left, repeat-x)
-
-    .site-copy-wrap
-        +shadow(inset 0rem 2rem 2rem -1rem $social-bg)
 
     .site-map
         padding:
@@ -44,14 +33,19 @@
         padding:
             bottom: 2%  
 
-
 /* Screen widths 700px and greater */
 @media screen and (min-width: 700px)
     /* general layout */
+    body
+        +transparentgradient-bg-img($body-bg, $black, 0.75, $body-bg-pattern, repeat, top left)
+    
     .container
         padding: 1.5% 5%
 
     /* header */
+    header
+        +bg-img($scallop-header, repeat-x, bottom left)
+
     .title
         width: 50%
         padding-top: 0rem
@@ -91,6 +85,9 @@
 
 
     /* main content */
+    section
+        +bg-img($section-bg, repeat, top left)
+
     .category
         width: 29%
         float: left
@@ -102,6 +99,7 @@
     /* footer */
     .social-media
         padding-top: 3rem
+        +bg-img($scallop-footer, repeat-x, top left)
 
     .site-map
         +bold-caps(1.1rem, 2, 0.025rem, 1rem)

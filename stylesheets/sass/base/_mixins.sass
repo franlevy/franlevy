@@ -1,24 +1,5 @@
 // MIXINS
 
-// Shading
-=shadow($shadow...)
-    -webkit-box-shadow: $shadow
-    -moz-box-shadow: $shadow
-    box-shadow: $shadow
-
-// Border radius
-=radius($radius)
-    -webkit-border-radius: $radius
-    -moz-border-radius: $radius
-    border-radius: $radius
-
-// Background-image
-=bg-img($imgpath, $position, $repeat)
-    background:
-        image: url($imgpath)
-        position: $position
-        repeat: $repeat
-
 // Bold capital lettered font
 =bold-caps($fontsize, $lineheight, $letterspace, $paddingtop)
     font:
@@ -31,18 +12,52 @@
     padding-top: $paddingtop
     color: $dark-font
 
-// Transparent background image
-=transparent-bg-img($color, $transparency)
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, $transparency) 0%, rgba(0, 0, 0, $transparency) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%, url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-    background: -moz-linear-gradient(top, rgba($color, $transparency) 0%, rgba($color, $transparency) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($color, $transparency)), color-stop(100%,rgba($color, $transparency))), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-    background: -webkit-linear-gradient(top, rgba($color, $transparency) 0%,rgba($color, $transparency) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-    background: -o-linear-gradient(top, rgba($color, $transparency) 0%,rgba($color, $transparency) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-    background: -ms-linear-gradient(top, rgba($color, $transparency) 0%,rgba($color, $transparency) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-    background: linear-gradient(to bottom, rgba($color, $transparency) 0%,rgba($color, $transparency) 100%), url("../images/background/cincinnati-skyline.png") no-repeat 50% 100%
-
 // Box model
 =box-sizing($box-model)
     -webkit-box-sizing: $box-model // Safari <= 5
     -moz-box-sizing: $box-model // Firefox <= 19
     box-sizing: $box-model
+
+// Border radius
+=radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    border-radius: $radius
+
+// Shading
+=shadow($shadow...)
+    -webkit-box-shadow: $shadow
+    -moz-box-shadow: $shadow
+    box-shadow: $shadow
+
+// Background image
+=bg-img($imgpath, $repeat, $position)
+    background:
+        image: url($imgpath)
+        repeat: $repeat
+        position: $position
+
+//Transparent background
+=transparent-bg($color, $transparency)    
+    background: $color // Fallback for web browsers that doesn't support RGBa
+    background: rgba($color, $transparency) // RGBa opacity, value between 0.0 and 1.0
+
+// Transparent background, linear gradient
+=transparentgradient-bg-img($color1, $color2, $transparency)
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, $transparency) 0%, rgba(0, 0, 0, $transparency) 100%)
+    background: -moz-linear-gradient(top, rgba($color1, $transparency) 0%, rgba($color2, $transparency) 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($color1, $transparency)), color-stop(100%,rgba($color2, $transparency)))
+    background: -webkit-linear-gradient(top, rgba($color1, $transparency) 0%,rgba($color2, $transparency) 100%)
+    background: -o-linear-gradient(top, rgba($color1, $transparency) 0%,rgba($color2, $transparency) 100%)
+    background: -ms-linear-gradient(top, rgba($color1, $transparency) 0%,rgba($color2, $transparency) 100%)
+    background: linear-gradient(to bottom, rgba($color1, $transparency) 0%,rgba($color2, $transparency) 100%)
+
+// Transparent background, linear gradient (beginning halfway down, going to the bottom), over a background image 
+=transparentgradient-bg-img($color1, $color2, $transparency, $image, $repeat, $position)
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, $transparency) 0%, rgba(0, 0, 0, $transparency) 100%), url($image) $repeat $position, url($image) $repeat $position
+    background: -moz-linear-gradient(top, rgba($color1, $transparency) 0%, rgba($color1, $transparency) 50%, rgba($color2, $transparency) 100%), url($image) $repeat $position
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($color1, $transparency)), color-stop(50%, rgba($color1, $transparency)), color-stop(100%,rgba($color2, $transparency))), url($image) $repeat $position
+    background: -webkit-linear-gradient(top, rgba($color1, $transparency) 0%, rgba($color1, $transparency) 50%, rgba($color2, $transparency) 100%), url($image) $repeat $position
+    background: -o-linear-gradient(top, rgba($color1, $transparency) 0%,rgba($color1, $transparency) 50%,rgba($color2, $transparency) 100%), url($image) $repeat $position
+    background: -ms-linear-gradient(top, rgba($color1, $transparency) 0%,rgba($color1, $transparency) 50%,rgba($color2, $transparency) 100%), url($image) $repeat $position
+    background: linear-gradient(to bottom, rgba($color1, $transparency) 0%,rgba($color1, $transparency) 50%,rgba($color2, $transparency) 100%), url($image) $repeat $position

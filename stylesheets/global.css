@@ -143,7 +143,6 @@ body {
 
 /*** HEADER *** */
 header {
-  background-color: #453f3f;
   width: 100%;
   overflow: overlay; }
   header .container {
@@ -232,14 +231,12 @@ article {
 
 /*** FOOTER *** */
 footer {
-  text-align: center;
-  background-color: #453f3f; }
+  text-align: center; }
   footer .site-copy-wrap {
     padding: 0; }
 
 .social-media {
   padding-top: 3rem;
-  background-color: #453f3f;
   font-size: 1.5rem; }
   .social-media li {
     padding-left: 2%; }
@@ -276,11 +273,6 @@ footer {
     font-size: 2.9rem; }
 
   /* header */
-  header {
-    background-image: url("../images/background/basecamp-whiter_scallop2.png");
-    background-position: bottom left;
-    background-repeat: repeat-x; }
-
   .title {
     padding-top: 0rem; }
 
@@ -288,24 +280,10 @@ footer {
   .nav-btn {
     padding-top: 4.5%; }
 
-  /* main content */
-  section {
-    background-image: url("../images/background/basecamp-whiter.png");
-    background-position: top left;
-    background-repeat: repeat; }
-
   /* footer */
   .social-media {
     text-align: right;
-    padding-top: 3rem;
-    background-image: url("../images/background/basecamp-whiter_scallop3.png");
-    background-position: top left;
-    background-repeat: repeat-x; }
-
-  .site-copy-wrap {
-    -webkit-box-shadow: inset 0rem 2rem 2rem -1rem #453f3f;
-    -moz-box-shadow: inset 0rem 2rem 2rem -1rem #453f3f;
-    box-shadow: inset 0rem 2rem 2rem -1rem #453f3f; }
+    padding-top: 3rem; }
 
   .site-map {
     padding-top: 0%;
@@ -316,10 +294,24 @@ footer {
 /* Screen widths 700px and greater */
 @media screen and (min-width: 700px) {
   /* general layout */
+  body {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url("../images/background/applebackgroundtile_lighter.png") repeat top left, url("../images/background/applebackgroundtile_lighter.png") repeat top left;
+    background: -moz-linear-gradient(top, rgba(69, 63, 63, 0.75) 0%, rgba(69, 63, 63, 0.75) 50%, rgba(0, 0, 0, 0.75) 100%), url("../images/background/applebackgroundtile_lighter.png") repeat top left;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(69, 63, 63, 0.75)), color-stop(50%, rgba(69, 63, 63, 0.75)), color-stop(100%, rgba(0, 0, 0, 0.75))), url("../images/background/applebackgroundtile_lighter.png") repeat top left;
+    background: -webkit-linear-gradient(top, rgba(69, 63, 63, 0.75) 0%, rgba(69, 63, 63, 0.75) 50%, rgba(0, 0, 0, 0.75) 100%), url("../images/background/applebackgroundtile_lighter.png") repeat top left;
+    background: -o-linear-gradient(top, rgba(69, 63, 63, 0.75) 0%, rgba(69, 63, 63, 0.75) 50%, rgba(0, 0, 0, 0.75) 100%), url("../images/background/applebackgroundtile_lighter.png") repeat top left;
+    background: -ms-linear-gradient(top, rgba(69, 63, 63, 0.75) 0%, rgba(69, 63, 63, 0.75) 50%, rgba(0, 0, 0, 0.75) 100%), url("../images/background/applebackgroundtile_lighter.png") repeat top left;
+    background: linear-gradient(to bottom, rgba(69, 63, 63, 0.75) 0%, rgba(69, 63, 63, 0.75) 50%, rgba(0, 0, 0, 0.75) 100%), url("../images/background/applebackgroundtile_lighter.png") repeat top left; }
+
   .container {
     padding: 1.5% 5%; }
 
   /* header */
+  header {
+    background-image: url("../images/background/basecamp-whiter_scallop2.png");
+    background-repeat: repeat-x;
+    background-position: bottom left; }
+
   .title {
     width: 50%;
     padding-top: 0rem; }
@@ -353,6 +345,11 @@ footer {
         border: none; }
 
   /* main content */
+  section {
+    background-image: url("../images/background/basecamp-whiter.png");
+    background-repeat: repeat;
+    background-position: top left; }
+
   .category {
     width: 29%;
     float: left;
@@ -362,7 +359,10 @@ footer {
 
   /* footer */
   .social-media {
-    padding-top: 3rem; }
+    padding-top: 3rem;
+    background-image: url("../images/background/basecamp-whiter_scallop3.png");
+    background-repeat: repeat-x;
+    background-position: top left; }
 
   .site-map {
     font-family: "draftsmanregular";
