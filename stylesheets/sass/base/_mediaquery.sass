@@ -20,9 +20,12 @@
         padding-top: 4.5%
     
     /* footer */
+    footer
+        .inner-wrap
+            padding-top: 2.5rem
+
     .social-media
         text-align: right
-        padding-top: 3rem
 
     .site-map
         padding:
@@ -37,7 +40,7 @@
 @media screen and (min-width: 700px)
     /* general layout */
     body
-        +transparentgradient-bg-img($body-bg, $black, 0.85, $body-bg-pattern, repeat, top left)
+        +transparentgradient-bg-img($body-bg, $near-black, 0.90, $body-bg-pattern, repeat, top left)
     
     .container
         padding: 1.5% 5%
@@ -86,7 +89,7 @@
 
     /* main content */
     section
-        +bg-img($section-bg, repeat, top left)
+        +bg-img($section-bg-pattern, repeat, top left)
 
     .category
         width: 29%
@@ -97,9 +100,11 @@
             padding-right: 0%
 
     /* footer */
-    .social-media
-        padding-top: 3rem
+    footer
         +bg-img($scallop-footer, repeat-x, top left)
+
+        .inner-wrap
+            padding-top: 3rem
 
     .site-map
         +bold-caps(1.1rem, 2, 0.025rem, 1rem)
@@ -116,7 +121,7 @@
             padding: 0 2rem
             border-right:
                 style: solid
-                color: $orange
+                color: $link-color
             border-right-width: 0.1rem
 
     .copyright
@@ -135,8 +140,9 @@
         padding-top: 1rem
 
     /* footer */
-    .social-media
-        padding-top: 3rem
+    footer
+        .inner-wrap
+            padding-top: 2.5rem
 
     .site-map
         a:link, a:visited, a:hover, a:active, a:focus
@@ -150,8 +156,9 @@
         padding-top: 1rem
     
     /* footer */
-    .social-media
-        padding-top: 3rem
+    footer
+        .inner-wrap
+            padding-top: 2rem
 
 
 /* General media queries */

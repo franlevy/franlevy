@@ -1,5 +1,6 @@
       <!-- Footer -->
       <footer>
+        <div class='inner-wrap'>
         <!-- Social Media Links -->
         <div class='social-media'>
           <div class='container'>
@@ -19,7 +20,6 @@
             </ul>
           </div>
         </div>
-        <div class='site-copy-wrap'>
           <!-- Site Map -->
           <div class='site-map'>
             <div class='container'>

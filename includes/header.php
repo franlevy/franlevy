@@ -20,29 +20,31 @@
     <body>
       <!-- Header and Navigation -->
       <header>
-        <div class='container'>
-          <div class='title'>
-            <h1>
-              <a href='index.php'>FRAN LEVY</a>
-            </h1>
-          </div>
-          <div class='nav-btn'>
-            <a class='navicon link' href='#mainmenu'></a>
-          </div>
-          <div id='mainmenu'>
-            <nav>
-              <ul>
-                <li>
-                  <a href="portfolio.php">Portfolio</a>
-                </li>
-                <li>
-                  <a href="about.php">About</a>
-                </li>
-                <li>
-                  <a href="contact.php">Contact</a>
-                </li>
-              </ul>
-            </nav>
+        <div class='inner-wrap'>
+          <div class='container'>
+            <div class='title'>
+              <h1>
+                <a href='index.php'>FRAN LEVY</a>
+              </h1>
+            </div>
+            <div class='nav-btn'>
+              <a class='navicon link' href='#mainmenu'></a>
+            </div>
+            <div id='mainmenu'>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="portfolio.php">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="about.php">About</a>
+                  </li>
+                  <li>
+                    <a href="contact.php">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </header>

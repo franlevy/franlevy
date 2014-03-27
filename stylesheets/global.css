@@ -85,7 +85,7 @@ a:link, a:visited {
   color: #ffa400; }
 
 a:hover, a:active, a:focus {
-  color: #fdfff0; }
+  color: #fbfee5; }
 
 li {
   display: inline-block; }
@@ -149,8 +149,10 @@ body {
 header {
   width: 100%;
   overflow: overlay; }
-  header .container {
-    padding-bottom: 4%; }
+  header .inner-wrap {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: #252732; }
 
 .title {
   float: left;
@@ -201,7 +203,7 @@ nav {
   nav a:link, nav a:visited, nav a:hover, nav a:focus {
     color: #ffa400; }
   nav a:active {
-    color: #fdfff0; }
+    color: #fbfee5; }
   nav li {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -221,13 +223,13 @@ section {
   width: 100%;
   padding-top: 1.5%;
   padding-bottom: 2.5%;
-  background-color: #fdfff0; }
+  background-color: #fbfee5; }
   section h2, section h3 {
     text-align: center; }
   section a {
     color: #1b1c1d; }
   section a:hover, section a:focus {
-    color: #ffa400; }
+    color: #fbfee5; }
 
 article {
   clear: both;
@@ -236,12 +238,12 @@ article {
 /*** FOOTER *** */
 footer {
   text-align: center; }
-  footer .site-copy-wrap {
-    padding: 0; }
+  footer .inner-wrap {
+    padding-top: 3rem; }
 
 .social-media {
-  padding-top: 3rem;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  background-color: #252732; }
   .social-media li {
     padding-left: 2%; }
 
@@ -285,9 +287,11 @@ footer {
     padding-top: 4.5%; }
 
   /* footer */
+  footer .inner-wrap {
+    padding-top: 2.5rem; }
+
   .social-media {
-    text-align: right;
-    padding-top: 3rem; }
+    text-align: right; }
 
   .site-map {
     padding-top: 0%;
@@ -299,13 +303,13 @@ footer {
 @media screen and (min-width: 700px) {
   /* general layout */
   body {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left, url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: -moz-linear-gradient(top, rgba(69, 63, 63, 0.85) 0%, rgba(69, 63, 63, 0.85) 50%, rgba(0, 0, 0, 0.85) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(69, 63, 63, 0.85)), color-stop(50%, rgba(69, 63, 63, 0.85)), color-stop(100%, rgba(0, 0, 0, 0.85))), url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: -webkit-linear-gradient(top, rgba(69, 63, 63, 0.85) 0%, rgba(69, 63, 63, 0.85) 50%, rgba(0, 0, 0, 0.85) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: -o-linear-gradient(top, rgba(69, 63, 63, 0.85) 0%, rgba(69, 63, 63, 0.85) 50%, rgba(0, 0, 0, 0.85) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: -ms-linear-gradient(top, rgba(69, 63, 63, 0.85) 0%, rgba(69, 63, 63, 0.85) 50%, rgba(0, 0, 0, 0.85) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: linear-gradient(to bottom, rgba(69, 63, 63, 0.85) 0%, rgba(69, 63, 63, 0.85) 50%, rgba(0, 0, 0, 0.85) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left; }
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left, url("../images/background/blue-whiteflowers.jpg") repeat top left;
+    background: -moz-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(64, 66, 80, 0.9)), color-stop(50%, rgba(64, 66, 80, 0.9)), color-stop(100%, rgba(17, 17, 17, 0.9))), url("../images/background/blue-whiteflowers.jpg") repeat top left;
+    background: -webkit-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
+    background: -o-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
+    background: -ms-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
+    background: linear-gradient(to bottom, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left; }
 
   .container {
     padding: 1.5% 5%; }
@@ -336,7 +340,7 @@ footer {
     padding-top: 2rem;
     margin-top: 0; }
     nav a:hover, nav a:active, nav a:focus {
-      color: #fdfff0; }
+      color: #fbfee5; }
     nav li {
       padding: 2% 0% 0% 3%;
       display: inline-block; }
@@ -362,11 +366,12 @@ footer {
       padding-right: 0%; }
 
   /* footer */
-  .social-media {
-    padding-top: 3rem;
+  footer {
     background-image: url("../images/background/basecamp-whiter_scallop3.png");
     background-repeat: repeat-x;
     background-position: top left; }
+    footer .inner-wrap {
+      padding-top: 3rem; }
 
   .site-map {
     font-family: "draftsmanregular";
@@ -401,8 +406,8 @@ footer {
     padding-top: 1rem; }
 
   /* footer */
-  .social-media {
-    padding-top: 3rem; }
+  footer .inner-wrap {
+    padding-top: 2.5rem; }
 
   .site-map a:link, .site-map a:visited, .site-map a:hover, .site-map a:active, .site-map a:focus {
     padding: 0 2rem; } }
@@ -413,8 +418,8 @@ footer {
     padding-top: 1rem; }
 
   /* footer */
-  .social-media {
-    padding-top: 3rem; } }
+  footer .inner-wrap {
+    padding-top: 2rem; } }
 /* General media queries */
 @viewport {
   width: extend-to-zoom;
