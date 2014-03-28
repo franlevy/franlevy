@@ -8,16 +8,13 @@ include("includes/header.php");
     <h2>
       Portfolio
     </h2>
-    <p>
-      Check back soon for samples of my work.
-    </p>
     <article>
       <h3></h3>
       <div class='category'>
-        <p></p>
+        <img src='images/websites/LizKalish_screenshot.png'>
       </div>
       <div class='category'>
-        <p></p>
+        <img src='images/websites/WIWYK_screenshot.png'>
       </div>
       <div class='category'>
         <p></p>
