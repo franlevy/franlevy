@@ -34,3 +34,17 @@ $(document).ready(function() {
         event.preventDefault();
     });
 });
+
+/* OPEN EXTERNAL LINKS IN NEW TABS OR WINDOWS */
+// Note: The user's individual browser settings determine whether the link will open a new tab or a new window.
+
+$(document).ready(function() {
+    
+    $( 'a[href^="http://"]' )
+        .attr( 'target','_blank' )
+        .addClass( 'external_link' );
+
+    $( 'a[href^="https://"]' )
+        .attr( 'target','_blank' )
+        .addClass( 'external_link' );
+});

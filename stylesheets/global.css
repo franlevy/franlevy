@@ -365,6 +365,9 @@ footer {
     .category:nth-child(3n+1) {
       padding-right: 0%; }
 
+  .gallery .category {
+    padding-bottom: 6.5%; }
+
   /* footer */
   footer {
     background-image: url("../images/background/basecamp-whiter_scallop3.png");
