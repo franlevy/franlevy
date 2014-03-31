@@ -1,5 +1,5 @@
 /* html5doctor.com Reset Stylesheet */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, label, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -150,20 +150,34 @@ body {
 
 /*** FORMS & TABLES *** */
 form {
-  text-align: center; }
-
-table {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  width: auto;
+  text-align: left; }
+
+table {
   width: 100%;
-  padding-right: 5%;
   max-width: 50rem; }
 
-input[type="text"], input[value="*"], textarea {
+input, textarea {
   width: 100%;
   font-size: 1.4rem;
   line-height: 1.2; }
+
+input[type="submit"] {
+  width: auto; }
+
+th, td {
+  padding: 1rem; }
+
+td {
+  width: 100%; }
+
+label {
+  display: block;
+  padding-top: 0;
+  font-style: bold; }
 
 /*** HEADER *** */
 header {
@@ -262,6 +276,10 @@ section {
     color: #1b1c1d; }
   section a:hover, section a:focus {
     color: #fbfee5; }
+  section li {
+    display: block;
+    width: 100%;
+    clear: both; }
 
 article {
   clear: both;
@@ -300,7 +318,7 @@ footer {
 
 .copyright {
   padding-bottom: 1.5rem; }
-  .copyright p {
+  .copyright p, .copyright label {
     font-size: 1.1rem;
     color: #ffa400; }
 
@@ -390,15 +408,16 @@ footer {
     background-image: url("../images/background/basecamp-whiter.png");
     background-repeat: repeat;
     background-position: top left; }
+    section li {
+      width: 29%;
+      float: left;
+      clear: none;
+      padding-right: 6.5%;
+      display: inline-block; }
+      section li:nth-child(3n+3) {
+        padding-right: 0%; }
 
-  .category {
-    width: 29%;
-    float: left;
-    padding-right: 6.5%; }
-    .category:nth-child(3n+1) {
-      padding-right: 0%; }
-
-  .gallery .category {
+  .gallery li {
     padding-bottom: 6.5%; }
 
   /* footer */
@@ -427,7 +446,7 @@ footer {
       border-right-color: #ffa400;
       border-right-width: 0.1rem; }
 
-  .copyright p {
+  .copyright p, .copyright label {
     font-size: 1rem; } }
 /* Screen widths 800px and greater */
 @media screen and (min-width: 800px) {

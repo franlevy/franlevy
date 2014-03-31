@@ -86,16 +86,18 @@
     section
         +bg-img($section-bg-pattern, repeat, top left)
 
-    .category
-        width: 29%
-        float: left
-        padding-right: (13%/2)
+        li
+            width: 29%
+            float: left
+            clear: none
+            padding-right: (13%/2)
+            display: inline-block
 
-        &:nth-child(3n+1)
-            padding-right: 0%
+            &:nth-child(3n+3)
+                padding-right: 0%
 
     .gallery
-        .category
+        li
             padding-bottom: (13%/2)
 
     /* footer */

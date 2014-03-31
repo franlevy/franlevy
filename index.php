@@ -12,41 +12,45 @@ include("includes/header.php");
       <h3>
         Mad skills
       </h3>
-      <div class='category'>
-        <p>
-          Attractive, relevant design. I will work with you to create or customize beautiful designs and layouts that best reflect your products or services.
-        </p>
-      </div>
-      <div class='category'>
-        <p>
-          Front-end web development.
-        </p>
-      </div>
-      <div class='category'>
-        <p>
-          Clear, concise content creation and editing.
-        </p>
-      </div>
+      <ul>
+        <li>
+          <p>
+            Attractive, relevant design. I will work with you to create or customize beautiful designs and layouts that best reflect your products or services.
+          </p>
+        </li>
+        <li>
+          <p>
+            Front-end web development.
+          </p>
+        </li>
+        <li>
+          <p>
+            Clear, concise content creation and editing.
+          </p>
+        </li>
+      </ul>
     </article>
     <article>
       <h3>
         Work Samples
       </h3>
-      <div class='category'>
-        <p>
-          Linked image to my past work.
-        </p>
-      </div>
-      <div class='category'>
-        <p>
-          Linked image to my past work.
-        </p>
-      </div>
-      <div class='category'>
-        <p>
-          Linked image to my past work.
-        </p>
-      </div>
+      <ul>
+        <li>
+          <p>
+            Linked image to my past work.
+          </p>
+        </li>
+        <li>
+          <p>
+            Linked image to my past work.
+          </p>
+        </li>
+        <li>
+          <p>
+            Linked image to my past work.
+          </p>
+        </li>
+      </ul>
     </article>
   </div>
 </section>

@@ -1,15 +1,31 @@
 /**** FORMS & TABLES ****/
 
 form
-    text-align: center
+    +box-sizing($box-model)
+    width: auto
+    text-align: left
 
 table
-    +box-sizing($box-model)
     width: 100%
-    padding-right: 5%
     max-width: 50rem
 
-input[type="text"], input[value=*], textarea
+input, textarea
     width: 100%
     font-size: 1.4rem
     line-height: 1.2
+
+input[type="submit"]
+    width: auto
+
+th, td
+    padding: 1rem
+
+td 
+    width: 100%
+
+label
+    display: block
+    @extend p
+    padding-top: 0
+    font-style: bold
+

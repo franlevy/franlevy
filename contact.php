@@ -44,7 +44,15 @@
                         <label for "email">Email</label>
                     </th>
                     <td>
-                        <input type="text" name="email" id="email">
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for "phone">Phone Number</label>
+                    </th>
+                    <td>
+                        <input type="tel" name="phone" id="phone">
                     </td>
                 </tr>
                 <tr>
