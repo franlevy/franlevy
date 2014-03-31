@@ -28,7 +28,7 @@
               </h1>
             </div>
             <div class='nav-btn'>
-              <a class='navicon link' href='#mainmenu'></a>
+              <a class='navicon link' href='#mainmenu'><span></span></a>
             </div>
             <div id='mainmenu'>
               <nav>

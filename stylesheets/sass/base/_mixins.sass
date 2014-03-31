@@ -52,12 +52,12 @@
     background: -ms-linear-gradient(top, rgba($color1, $transparency) 0%,rgba($color2, $transparency) 100%)
     background: linear-gradient(to bottom, rgba($color1, $transparency) 0%,rgba($color2, $transparency) 100%)
 
-// Transparent background, linear gradient (beginning halfway down, going to the bottom), over a background image 
+// Transparent background, linear gradient (beginning 65% of the way down, going to the bottom), over a background image 
 =transparentgradient-bg-img($color1, $color2, $transparency, $image, $repeat, $position)
     background: -moz-linear-gradient(top, rgba(0, 0, 0, $transparency) 0%, rgba(0, 0, 0, $transparency) 100%), url($image) $repeat $position, url($image) $repeat $position
-    background: -moz-linear-gradient(top, rgba($color1, $transparency) 0%, rgba($color1, $transparency) 50%, rgba($color2, $transparency) 100%), url($image) $repeat $position
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($color1, $transparency)), color-stop(50%, rgba($color1, $transparency)), color-stop(100%,rgba($color2, $transparency))), url($image) $repeat $position
-    background: -webkit-linear-gradient(top, rgba($color1, $transparency) 0%, rgba($color1, $transparency) 50%, rgba($color2, $transparency) 100%), url($image) $repeat $position
-    background: -o-linear-gradient(top, rgba($color1, $transparency) 0%,rgba($color1, $transparency) 50%,rgba($color2, $transparency) 100%), url($image) $repeat $position
-    background: -ms-linear-gradient(top, rgba($color1, $transparency) 0%,rgba($color1, $transparency) 50%,rgba($color2, $transparency) 100%), url($image) $repeat $position
-    background: linear-gradient(to bottom, rgba($color1, $transparency) 0%,rgba($color1, $transparency) 50%,rgba($color2, $transparency) 100%), url($image) $repeat $position
+    background: -moz-linear-gradient(top, rgba($color1, $transparency) 0%, rgba($color1, $transparency) 65%, rgba($color2, $transparency) 100%), url($image) $repeat $position
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($color1, $transparency)), color-stop(65%, rgba($color1, $transparency)), color-stop(100%,rgba($color2, $transparency))), url($image) $repeat $position
+    background: -webkit-linear-gradient(top, rgba($color1, $transparency) 0%, rgba($color1, $transparency) 65%, rgba($color2, $transparency) 100%), url($image) $repeat $position
+    background: -o-linear-gradient(top, rgba($color1, $transparency) 0%,rgba($color1, $transparency) 65%,rgba($color2, $transparency) 100%), url($image) $repeat $position
+    background: -ms-linear-gradient(top, rgba($color1, $transparency) 0%,rgba($color1, $transparency) 65%,rgba($color2, $transparency) 100%), url($image) $repeat $position
+    background: linear-gradient(to bottom, rgba($color1, $transparency) 0%,rgba($color1, $transparency) 65%,rgba($color2, $transparency) 100%), url($image) $repeat $position

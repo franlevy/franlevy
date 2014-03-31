@@ -7,12 +7,16 @@ header
     .inner-wrap
         margin-top: 2rem
         margin-bottom: 3rem
-        background-color: $header-bg
+        background: $header-bg
+        border:
+            top: 0.1rem solid $blue
+            bottom: 0.1rem solid $blue
+        +shadow(0rem 0rem 1.2rem 0.1rem $near-black)
 
 .title
     float: left
     width: 80%
     padding-top: 0rem
-    padding-bottom: 0rem
+    padding-bottom: 0.7rem
     a
         color: $link-color

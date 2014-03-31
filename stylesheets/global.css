@@ -34,7 +34,7 @@ a {
 
 /* TYPOGRAPHY */
 /* All font sizes calculated based on 1rem = 10px */
-p {
+p, label {
   font-family: Georgia, Times, serif;
   font-size: 1.4rem;
   font-weight: normal;
@@ -43,7 +43,7 @@ p {
 
 h1 {
   font-family: "casqueopenfaceregular";
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: #1b1c1d; }
 
 h2 {
@@ -141,9 +141,29 @@ body {
   max-width: 40rem;
   overflow: hidden; }
 
+.center {
+  text-align: center; }
+
 .icon {
   height: 3rem;
   width: 3rem; }
+
+/*** FORMS & TABLES *** */
+form {
+  text-align: center; }
+
+table {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 5%;
+  max-width: 50rem; }
+
+input[type="text"], input[value="*"], textarea {
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 1.2; }
 
 /*** HEADER *** */
 header {
@@ -152,13 +172,18 @@ header {
   header .inner-wrap {
     margin-top: 2rem;
     margin-bottom: 3rem;
-    background-color: #252732; }
+    background: #252732;
+    border-top: 0.1rem solid #404250;
+    border-bottom: 0.1rem solid #404250;
+    -webkit-box-shadow: 0rem 0rem 1.2rem 0.1rem #111111;
+    -moz-box-shadow: 0rem 0rem 1.2rem 0.1rem #111111;
+    box-shadow: 0rem 0rem 1.2rem 0.1rem #111111; }
 
 .title {
   float: left;
   width: 80%;
   padding-top: 0rem;
-  padding-bottom: 0rem; }
+  padding-bottom: 0.7rem; }
   .title a {
     color: #ffa400; }
 
@@ -167,16 +192,23 @@ header {
 .nav-btn {
   float: right;
   width: 20%;
-  padding-top: 5%; }
+  padding: 11% 0%; }
 
-.navicon {
-  display: block;
-  width: 3rem;
+.navicon span, .navicon span:before, .navicon span:after {
+  cursor: pointer;
+  border-radius: 1rem;
   height: 0.5rem;
-  line-height: 0;
-  border-top: 1.5rem double #ffa400;
-  border-bottom: 0.5rem solid #ffa400;
-  float: right; }
+  width: 3rem;
+  background: #ffa400;
+  position: absolute;
+  display: block;
+  content: ""; }
+
+.navicon span:before {
+  top: -1rem; }
+
+.navicon span:after {
+  bottom: -1rem; }
 
 /* MAIN MENU NAVIGATION */
 #mainmenu {
@@ -199,7 +231,7 @@ nav {
   text-transform: uppercase;
   padding-top: 0;
   color: #1b1c1d;
-  margin-top: 2rem; }
+  margin-top: 0rem; }
   nav a:link, nav a:visited, nav a:hover, nav a:focus {
     color: #ffa400; }
   nav a:active {
@@ -243,7 +275,12 @@ footer {
 
 .social-media {
   font-size: 1.5rem;
-  background-color: #252732; }
+  background: #252732;
+  border-top: 0.1rem solid #404250;
+  border-bottom: 0.1rem solid #404250;
+  -webkit-box-shadow: 0rem 0rem 1.2rem 0.1rem #111111;
+  -moz-box-shadow: 0rem 0rem 1.2rem 0.1rem #111111;
+  box-shadow: 0rem 0rem 1.2rem 0.1rem #111111; }
   .social-media li {
     padding-left: 2%; }
 
@@ -255,7 +292,7 @@ footer {
   line-height: 1.7;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  padding-top: 0;
+  padding-top: 5%;
   color: #1b1c1d; }
   .site-map li {
     display: block;
@@ -276,26 +313,19 @@ footer {
     max-width: 100rem; }
 
   h1 {
-    font-size: 2.9rem; }
+    font-size: 2.4rem; }
 
   /* header */
   .title {
-    padding-top: 0rem; }
+    padding-bottom: 0.7rem; }
 
   /* navigation */
   .nav-btn {
-    padding-top: 4.5%; }
+    padding: 5% 0%; }
 
   /* footer */
-  footer .inner-wrap {
-    padding-top: 2.5rem; }
-
   .social-media {
     text-align: right; }
-
-  .site-map {
-    padding-top: 0%;
-    padding-bottom: 3%; }
 
   .copyright {
     padding-bottom: 2%; } }
@@ -304,15 +334,18 @@ footer {
   /* general layout */
   body {
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left, url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: -moz-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(64, 66, 80, 0.9)), color-stop(50%, rgba(64, 66, 80, 0.9)), color-stop(100%, rgba(17, 17, 17, 0.9))), url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: -webkit-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: -o-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: -ms-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
-    background: linear-gradient(to bottom, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 50%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left; }
+    background: -moz-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 65%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(64, 66, 80, 0.9)), color-stop(65%, rgba(64, 66, 80, 0.9)), color-stop(100%, rgba(17, 17, 17, 0.9))), url("../images/background/blue-whiteflowers.jpg") repeat top left;
+    background: -webkit-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 65%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
+    background: -o-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 65%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
+    background: -ms-linear-gradient(top, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 65%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left;
+    background: linear-gradient(to bottom, rgba(64, 66, 80, 0.9) 0%, rgba(64, 66, 80, 0.9) 65%, rgba(17, 17, 17, 0.9) 100%), url("../images/background/blue-whiteflowers.jpg") repeat top left; }
 
   .container {
     padding: 1.5% 5%; }
+
+  h1 {
+    font-size: 2.9rem; }
 
   /* header */
   header {
@@ -337,7 +370,7 @@ footer {
     width: 50%;
     text-align: right;
     background-color: transparent;
-    padding-top: 2rem;
+    padding-top: 0rem;
     margin-top: 0; }
     nav a:hover, nav a:active, nav a:focus {
       color: #fbfee5; }
@@ -373,8 +406,6 @@ footer {
     background-image: url("../images/background/basecamp-whiter_scallop3.png");
     background-repeat: repeat-x;
     background-position: top left; }
-    footer .inner-wrap {
-      padding-top: 3rem; }
 
   .site-map {
     font-family: "draftsmanregular";
@@ -406,23 +437,15 @@ footer {
 
   /* navigation */
   nav {
-    padding-top: 1rem; }
-
-  /* footer */
-  footer .inner-wrap {
-    padding-top: 2.5rem; }
+    padding-top: 0rem; }
 
   .site-map a:link, .site-map a:visited, .site-map a:hover, .site-map a:active, .site-map a:focus {
     padding: 0 2rem; } }
-/* Screen widths 800px and greater */
+/* Screen widths 1000px and greater */
 @media screen and (min-width: 1000px) {
   /* navigation */
   nav {
-    padding-top: 1rem; }
-
-  /* footer */
-  footer .inner-wrap {
-    padding-top: 2rem; } }
+    padding-top: 0rem; } }
 /* General media queries */
 @viewport {
   width: extend-to-zoom;

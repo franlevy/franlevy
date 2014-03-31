@@ -5,22 +5,30 @@
 .nav-btn
     float: right
     width: 20%
-    padding-top: 5%
+    padding: 11% 0%
 
 //
-    Three Line Navicon
-    codepen.io/anon/full/Lxecv
-    by "Justin"
+    Three Line Navicon ("Hamburger")
+    by "Elijah Manor"
+    http://www.elijahmanor.com/css-animated-hamburger-icon/
     (modified by Fran Levy)
 
-.navicon
-    display: block
+.navicon span, .navicon span:before, .navicon span:after
+    cursor: pointer
+    border-radius: 1rem
+    height: 0.5rem
     width: 3rem
-    height: .5rem
-    line-height: 0
-    border-top: 1.5rem double $link-color
-    border-bottom: .5rem solid $link-color
-    float: right
+    background: $link-color
+    position: absolute
+    display: block
+    content: ""
+
+.navicon span:before
+    top: -1rem
+
+.navicon span:after
+    bottom: -1rem
+
 
 /* MAIN MENU NAVIGATION */
 
@@ -35,7 +43,7 @@ nav
     width: 100%
     background-color: none
     +bold-caps(1.3rem, 1.7, 0.15rem, 0)
-    margin-top: 2rem
+    margin-top: 0rem
 
     a:link, a:visited, a:hover, a:focus
         color: $link-color

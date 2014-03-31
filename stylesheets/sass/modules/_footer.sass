@@ -9,15 +9,18 @@ footer
 
 .social-media
     font-size: 1.5rem
-    background-color: $footer-bg
+    background: $footer-bg
+    border:
+        top: 0.1rem solid $blue
+        bottom: 0.1rem solid $blue
+    +shadow(0rem 0rem 1.2rem 0.1rem $near-black)
     
     li 
         padding-left: 2%
 
 .site-map
-    padding:
-        bottom: 5%
-    +bold-caps(1.3rem, 1.7, 0.15rem, 0)
+    padding-bottom: 5%
+    +bold-caps(1.3rem, 1.7, 0.15rem, 5%)
 
     li
         display: block
