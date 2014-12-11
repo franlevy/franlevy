@@ -1,36 +1,55 @@
+<?php 
+  
+	$portfolios = array();
+    	$portfolios[1] = array(
+    		"name" => "What I Wish You Knew",
+    		"img" => "images/thumbs/wiwyk_thumb.png"
+    	); 
+		$portfolios[2] = array(
+    		"name" => "Liz Kalish Paintings",
+    		"img" => "images/thumbs/lizkalish_thumb.png"
+    	);
+		$portfolios[3] = array(
+	        "name" => "Foundation for Osteopathic Research and Continuous Education (FORCE)",
+	        "img" => "images/thumbs/force-web-proposal_p1_thumb.png"
+		);
+    	$portfolios[4] = array(
+    		"name" => "Business Performance Institute",
+    		"img" => "images/thumbs/bpi-web-proposal_p1_thumb.png"
+    	); 	
+	   	$portfolios[5] = array(
+    		"name" => "Chocolate-Covered Katie",
+    		"img" => "images/thumbs/cck-web-proposal_p1_thumb.png"
+    	);		
+		$portfolios[6] = array(
+    		"name" => "Harvard Graduate School of Design's 'View on Harvard GSD'",
+    		"img" => "images/thumbs/gsd-v3-bookspread_thumb.png"
+    	);
+?>
+
 <?php
-$pageTitle = "Portfolio";
-include("includes/header.php");
+	$pageTitle = "Portfolio";
+	include("includes/header.php");
 ?>
 <!-- Main Content -->
 <section>
-  <div class='container'>
-    <h2>
-      Portfolio
-    </h2>
-    <article class='gallery'>
-      <h3></h3>
-      <ul>
-        <li>
-          <img alt='FORCE website' src='images/websites/force-web-proposal_p1.svg'>
-        </li>
-        <li>
-          <img alt='Liz Kalish Paintings website' src='images/websites/LizKalish_screenshot.png'>
-        </li>
-        <li>
-          <img alt='What I Wish You Knew website' src='images/websites/WIWYK_screenshot.png'>
-        </li>
-        <li>
-          <img alt='Chocolate-Covered Katie website' src='images/websites/cck-web-proposal_p1.svg'>
-        </li>
-        <li>
-          <img alt='Business Performance Institute website' src='images/websites/bpi-web-proposal_p1.svg'>
-        </li>
-        <li>
-          <img alt='Harvard Graduate School of Design 2-page book spread' src='images/graphic-design/gsd-v3-bookspread.svg'>
-        </li>
-      </ul>
-    </article>
-  </div>
+	<div class='container'>
+		<h2>
+			Portfolio
+		</h2>
+		<article class='gallery'>
+			<ul>
+				<?php foreach($portfolios as $portfolio) { ?>
+					<li>
+						<div>
+							<img src="<?php echo $portfolio["img"]; ?>" alt="<?php echo $portfolio["name"] ?>">
+						</div>
+					</li>
+				<?php } ?>			
+			</ul>
+		</article>
+	</div>
 </section>
-<?php include("includes/footer.php"); ?>
+<?php
+	include("includes/footer.php");
+?>

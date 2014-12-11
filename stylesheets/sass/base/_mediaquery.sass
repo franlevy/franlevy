@@ -9,7 +9,7 @@
 
     h1
         font:
-            size: 2.4rem
+            size: 3.75rem
 
     /* header */
     .title
@@ -31,14 +31,14 @@
 @media screen and (min-width: 700px)
     /* general layout */
     body
-        +transparentgradient-bg-img($body-bg, $near-black, 0.90, $body-bg-pattern, repeat, top left)
+        +transparentgradient-bg-img($body-bg, $near-black, 0.85, $body-bg-pattern, repeat, top left)
     
     .container
         padding: 1.5% 5%
 
     h1
         font:
-            size: 2.9rem
+            size: 4rem
 
     /* header */
     header
@@ -97,8 +97,10 @@
                 padding-right: 0%
 
     .gallery
+        padding-top: 5%
+
         li
-            padding-bottom: (13%/2)
+            padding: 0% (13%/2) (13%/2) 0%
 
     /* footer */
     footer
@@ -152,6 +154,7 @@
 @viewport
     width: extend-to-zoom
     zoom: 1.0
+
 
 img, video, canvas
     max-width: 100%
