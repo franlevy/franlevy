@@ -336,7 +336,7 @@ footer {
     color: #FFA400; }
 
 /**** MEDIA QUERIES *** */
-/* Screen widths 500px and greater */
+/* Screen widths 600px and greater */
 @media screen and (min-width: 500px) {
   /* general layout */
   .container {
@@ -346,20 +346,7 @@ footer {
   h1 {
     font-size: 3.75rem; }
 
-  /* header */
-  .title {
-    padding-bottom: 0.7rem; }
-
-  /* navigation */
-  .nav-btn {
-    padding: 5% 0%; }
-
-  /* footer */
-  .social-media {
-    text-align: right; }
-
-  .copyright {
-    padding-bottom: 2%; } }
+  /* header */ }
 /* Screen widths 700px and greater */
 @media screen and (min-width: 700px) {
   /* general layout */

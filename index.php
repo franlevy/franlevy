@@ -6,16 +6,18 @@ include("includes/header.php");
 <section>
   <div class='container'>
     <p>
-      This website is under construction. Check back soon, and here you'll find a few pithy sentences about me. Maybe there'll even be a photo or avatar.
-    </p>
+      This website is under construction. Check back soon, and here you'll find a few pithy sentences about me.
     <article>
       <h3>
         Mad skills
       </h3>
+      <p>
+        I fashion websites, graphics, and articles that attractively and clearly convey your message. Let me help you convert your website visitors into clients.
+      </p>
       <ul>
         <li>
           <p>
-            Attractive, relevant design. I will work with you to create or customize beautiful designs and layouts that best reflect your products or services.
+            Attractive, relevant design.
           </p>
         </li>
         <li>
